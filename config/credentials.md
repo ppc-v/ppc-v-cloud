@@ -4,7 +4,7 @@ Keys are stored **only** in the cloud environment's settings (the environment me
 
 Check what works with `python3 scripts/check_connections.py`.
 
-## Google (Ads, Tag Manager, GA4, Merchant Center, Search Console)
+## Google (Ads, Tag Manager, GA4, Merchant Center, Search Console, Drive, Sheets, Docs, Slides)
 One OAuth app and one sign-in as `paidsearch@vortala.com` covers all of them.
 
 | Variable | Where it comes from |
@@ -16,12 +16,12 @@ One OAuth app and one sign-in as `paidsearch@vortala.com` covers all of them.
 | `GOOGLE_ADS_LOGIN_CUSTOMER_ID` | `6241281836` |
 
 Setup steps:
-1. In the Google Cloud project, enable: Google Ads API, Tag Manager API, Google Analytics Admin API, Google Analytics Data API, Merchant API, Google Search Console API.
+1. In the Google Cloud project, enable: Google Ads API, Tag Manager API, Google Analytics Admin API, Google Analytics Data API, Merchant API, Google Search Console API, Google Drive API, Google Sheets API, Google Docs API, Google Slides API.
 2. OAuth consent screen: **Internal** (Workspace). If External, publish it to "In production"; in "Testing" the refresh token expires after 7 days.
 3. Create an OAuth client of type Web application, with authorised redirect URI `https://developers.google.com/oauthplayground`.
 4. At https://developers.google.com/oauthplayground: gear icon → "Use your own OAuth credentials" → enter the client ID and secret. Paste these scopes (one line, space separated), authorise as paidsearch@vortala.com, then "Exchange authorization code for tokens" and copy the refresh token:
    ```
-   https://www.googleapis.com/auth/adwords https://www.googleapis.com/auth/tagmanager.edit.containers https://www.googleapis.com/auth/tagmanager.edit.containerversions https://www.googleapis.com/auth/tagmanager.publish https://www.googleapis.com/auth/analytics.edit https://www.googleapis.com/auth/analytics.readonly https://www.googleapis.com/auth/content https://www.googleapis.com/auth/webmasters
+   https://www.googleapis.com/auth/adwords https://www.googleapis.com/auth/tagmanager.edit.containers https://www.googleapis.com/auth/tagmanager.edit.containerversions https://www.googleapis.com/auth/tagmanager.publish https://www.googleapis.com/auth/analytics.edit https://www.googleapis.com/auth/analytics.readonly https://www.googleapis.com/auth/content https://www.googleapis.com/auth/webmasters https://www.googleapis.com/auth/drive https://www.googleapis.com/auth/spreadsheets https://www.googleapis.com/auth/documents https://www.googleapis.com/auth/presentations
    ```
 5. paidsearch@vortala.com needs access in each product: a user on the MCC, a user on each GTM account (Publish permission), an Editor on each GA4 account, and a user in Merchant Center and Search Console where relevant.
 
@@ -49,5 +49,5 @@ Until then, Meta work can't run through the API. A personal token from Arif's ac
 | `WHATCONVERTS_API_TOKEN` | WhatConverts agency account → Integrations → API keys (create an agency/master key) |
 | `WHATCONVERTS_API_SECRET` | Same key |
 
-## Already connected (claude.ai connectors)
-Slack and Salesforce. Google Drive's connection was started but not finished; Canva, Semrush, DataforSEO and Autosheet are available to connect at https://claude.ai/settings/connectors.
+## claude.ai connectors (not relied on)
+The team prefers direct API access over claude.ai connectors; use the APIs above for Google Drive, Sheets, Docs and Slides. Slack and Salesforce are currently connected as claude.ai connectors.

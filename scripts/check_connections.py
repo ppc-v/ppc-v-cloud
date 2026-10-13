@@ -72,6 +72,7 @@ def check_google():
         ("Tag Manager", "https://tagmanager.googleapis.com/tagmanager/v2/accounts", "account"),
         ("GA4", "https://analyticsadmin.googleapis.com/v1beta/accountSummaries", "accountSummaries"),
         ("Search Console", "https://www.googleapis.com/webmasters/v3/sites", "siteEntry"),
+        ("Drive", "https://www.googleapis.com/drive/v3/files?pageSize=100", "files"),
     ]:
         ok, detail = get_json(url, token, key)
         report(name, ok, detail)

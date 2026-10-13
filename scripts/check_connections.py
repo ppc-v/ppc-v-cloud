@@ -6,13 +6,9 @@ import os
 import requests
 
 TIMEOUT = 30
-GOOGLE_VARS = [
-    "GOOGLE_ADS_DEVELOPER_TOKEN",
-    "GOOGLE_ADS_CLIENT_ID",
-    "GOOGLE_ADS_CLIENT_SECRET",
-    "GOOGLE_ADS_REFRESH_TOKEN",
-    "GOOGLE_ADS_LOGIN_CUSTOMER_ID",
-]
+# Tag Manager, GA4 and Search Console need only the OAuth trio; Google Ads also needs these.
+GOOGLE_VARS = ["GOOGLE_ADS_CLIENT_ID", "GOOGLE_ADS_CLIENT_SECRET", "GOOGLE_ADS_REFRESH_TOKEN"]
+GOOGLE_ADS_VARS = ["GOOGLE_ADS_DEVELOPER_TOKEN", "GOOGLE_ADS_LOGIN_CUSTOMER_ID"]
 META_BUSINESS_ID = "1517895191848391"
 
 
@@ -58,15 +54,19 @@ def check_google():
         return
     report("Google sign-in", True, "refresh token works")
 
-    try:
-        from google.ads.googleads.client import GoogleAdsClient
+    ads_gaps = missing(GOOGLE_ADS_VARS)
+    if ads_gaps:
+        report("Google Ads", False, "not set: " + ", ".join(ads_gaps))
+    else:
+        try:
+            from google.ads.googleads.client import GoogleAdsClient
 
-        os.environ.setdefault("GOOGLE_ADS_USE_PROTO_PLUS", "true")
-        client = GoogleAdsClient.load_from_env()
-        customers = client.get_service("CustomerService").list_accessible_customers()
-        report("Google Ads", True, f"{len(customers.resource_names)} directly accessible accounts")
-    except Exception as e:  # noqa: BLE001
-        report("Google Ads", False, str(e)[:300])
+            os.environ.setdefault("GOOGLE_ADS_USE_PROTO_PLUS", "true")
+            client = GoogleAdsClient.load_from_env()
+            customers = client.get_service("CustomerService").list_accessible_customers()
+            report("Google Ads", True, f"{len(customers.resource_names)} directly accessible accounts")
+        except Exception as e:  # noqa: BLE001
+            report("Google Ads", False, str(e)[:300])
 
     for name, url, key in [
         ("Tag Manager", "https://tagmanager.googleapis.com/tagmanager/v2/accounts", "account"),

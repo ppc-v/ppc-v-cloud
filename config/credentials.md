@@ -41,7 +41,7 @@ Setup steps (needs a Business portfolio admin):
 3. Assign the system user the ad accounts (full control), Pages, Instagram accounts and pixels/datasets.
 4. Generate a token for the app with these permissions: `ads_management`, `ads_read`, `business_management`, `pages_show_list`, `pages_read_engagement`, `pages_manage_ads`, `leads_retrieval`, `instagram_basic`, `catalog_management`.
 
-Status (2026-10-13): `META_ACCESS_TOKEN` is set for the system user "Claude PPC". It can read the portfolio's account list (255 owned + 10 client accounts), but only the 30 ad accounts assigned to it directly in step 3 can be used for insights or changes. Assign more accounts there as needed.
+Status (2026-10-13): `META_ACCESS_TOKEN` is set for the system user "Claude PPC". It can read the portfolio's account list (255 owned + 10 client accounts). 77 ad accounts are assigned to it directly in step 3: every account the inventory sheet tracks, plus Matthew Marsteller (unsettled). Only assigned accounts can be used for insights or changes, so assign new ones there as they're added.
 
 Call the Graph API with an explicit version (currently `v26.0`); unversioned calls fall back to a deprecated default and fail with error #2635.
 

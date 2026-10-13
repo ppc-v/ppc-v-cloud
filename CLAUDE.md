@@ -9,7 +9,7 @@ The shared workspace for Vortala's PPC team: Google Ads and Meta reporting, acco
 |---|---|---|---|---|
 | John Wylie | John | JW | Executing (end to end) | ask |
 | Jacob Froats | Jacob | JF | CEO | ask |
-| Sara Stuka | Sara | SS | Executing (end to end) | ask |
+| Sara Stuka | Sara | SS | Executing (end to end) | America/New_York (US Eastern) |
 | Stella Crosti | Stella | SC | Executing (end to end) | ask |
 | Izzat Arif | Arif | IA | Consulting and executing | Asia/Kuala_Lumpur (UTC+8) |
 

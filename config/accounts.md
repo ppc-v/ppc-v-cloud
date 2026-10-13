@@ -17,3 +17,5 @@ These IDs aren't secret. API keys go in `credentials.md` (names only).
 - Client status (Active / Paused / Canceled) is the team's own Google Ads label.
 - Lead definition used by the sheet: a call, form, booking, registration, purchase or messaging conversation. Page views, booking-page visits, directions and engagement are **not** leads. Use the same definition in reports unless the requester says otherwise.
 - Read it through the Google Sheets API with the paidsearch@ credentials (spreadsheet ID `1PHkhNJ6GHoAoKRtB-XyeaJFqnJbs00OzGZpNlMF6GwQ`). Don't rely on the public CSV export link: the sheet may be restricted to Vortala.
+- Updated by an Apps Script bound to the sheet (Extensions → Apps Script). Script ID: `1eatKDsUVvuawzBCdi5h-vYKZUSoAZ13Z3UrHq2g4ylBxmF9j82S6Lrvp`. Read it with the Apps Script API (`GET https://script.googleapis.com/v1/projects/<id>/content`). Any edits to it are live changes: preview first, as with any other change.
+- The sheet is owned by `arif@tincityimpact.com`, not a Vortala account; paidsearch@ has edit access.

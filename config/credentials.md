@@ -16,12 +16,12 @@ One OAuth app and one sign-in as `paidsearch@vortala.com` covers all of them.
 | `GOOGLE_ADS_LOGIN_CUSTOMER_ID` | `6241281836` |
 
 Setup steps:
-1. In the Google Cloud project, enable: Google Ads API, Tag Manager API, Google Analytics Admin API, Google Analytics Data API, Merchant API, Google Search Console API, Google Drive API, Google Sheets API, Google Docs API, Google Slides API.
+1. In the Google Cloud project, enable: Google Ads API, Tag Manager API, Google Analytics Admin API, Google Analytics Data API, Merchant API, Google Search Console API, Google Drive API, Google Sheets API, Google Docs API, Google Slides API, Apps Script API. Also, signed in as paidsearch@, switch on "Google Apps Script API" at https://script.google.com/home/usersettings.
 2. OAuth consent screen: **Internal** (Workspace). If External, publish it to "In production"; in "Testing" the refresh token expires after 7 days.
 3. Create an OAuth client of type Web application, with authorised redirect URI `https://developers.google.com/oauthplayground`.
 4. At https://developers.google.com/oauthplayground: gear icon → "Use your own OAuth credentials" → enter the client ID and secret. Paste these scopes (one line, space separated), authorise as paidsearch@vortala.com, then "Exchange authorization code for tokens" and copy the refresh token:
    ```
-   https://www.googleapis.com/auth/adwords https://www.googleapis.com/auth/tagmanager.edit.containers https://www.googleapis.com/auth/tagmanager.edit.containerversions https://www.googleapis.com/auth/tagmanager.publish https://www.googleapis.com/auth/analytics.edit https://www.googleapis.com/auth/analytics.readonly https://www.googleapis.com/auth/content https://www.googleapis.com/auth/webmasters https://www.googleapis.com/auth/drive https://www.googleapis.com/auth/spreadsheets https://www.googleapis.com/auth/documents https://www.googleapis.com/auth/presentations
+   https://www.googleapis.com/auth/adwords https://www.googleapis.com/auth/tagmanager.edit.containers https://www.googleapis.com/auth/tagmanager.edit.containerversions https://www.googleapis.com/auth/tagmanager.publish https://www.googleapis.com/auth/analytics.edit https://www.googleapis.com/auth/analytics.readonly https://www.googleapis.com/auth/content https://www.googleapis.com/auth/webmasters https://www.googleapis.com/auth/drive https://www.googleapis.com/auth/spreadsheets https://www.googleapis.com/auth/documents https://www.googleapis.com/auth/presentations https://www.googleapis.com/auth/script.projects
    ```
 5. paidsearch@vortala.com needs access in each product: a user on the MCC, a user on each GTM account (Publish permission), an Editor on each GA4 account, and a user in Merchant Center and Search Console where relevant.
 

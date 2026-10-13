@@ -11,7 +11,7 @@ The shared workspace for Vortala's PPC team: Google Ads and Meta reporting, acco
 | Jacob Froats | Jacob | JF | CEO | ask |
 | Sara Stuka | Sara | SS | Executing (end to end) | ask |
 | Stella Crosti | Stella | SC | Executing (end to end) | ask |
-| Izzat Arif | Arif | IA | Consulting and executing | ask |
+| Izzat Arif | Arif | IA | Consulting and executing | Asia/Kuala_Lumpur (UTC+8) |
 
 "Executing" means end to end: creative, reporting, publishing, optimising. Everyone has the same permissions. The team may grow; add people here.
 

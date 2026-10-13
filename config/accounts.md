@@ -1,0 +1,19 @@
+# Accounts reference
+
+These IDs aren't secret. API keys go in `credentials.md` (names only).
+
+| What | Value |
+|---|---|
+| Google Ads MCC | `624-128-1836` (API form: `6241281836`) |
+| Meta Business portfolio | `1517895191848391` (owns the client ad accounts) |
+| WhatConverts | One agency account containing every client profile |
+| Google service login | `paidsearch@vortala.com` (for Google Ads, GTM, GA4, Merchant Center, Search Console API access) |
+
+## Vortala Ad Account Inventory (master client list)
+- Sheet: https://docs.google.com/spreadsheets/d/1PHkhNJ6GHoAoKRtB-XyeaJFqnJbs00OzGZpNlMF6GwQ/edit
+- Refreshes daily at 06:00 GMT+8 from the MCC and the Meta portfolio.
+- Tabs: a "how to use" front tab with the flag catalogue, **Accounts** (one row per active ad account: health, top issue, owner, platform, client status, spend, budgets, leads, timezone, currency, IDs, notes), **Issues**, **Owners & Notes** (owner overrides and flag snoozes) and an Archive.
+- Ownership: Sara/John labels in Google Ads are the official assignment. Meta accounts take the owner of the same client's Google account, matched by PP number. Shared Google logins: `ppcmcc1@` = Sara, `ppcmcc2@` / `ppcmcc3@` = John.
+- Client status (Active / Paused / Canceled) is the team's own Google Ads label.
+- Lead definition used by the sheet: a call, form, booking, registration, purchase or messaging conversation. Page views, booking-page visits, directions and engagement are **not** leads. Use the same definition in reports unless the requester says otherwise.
+- Read it without a login: `https://docs.google.com/spreadsheets/d/1PHkhNJ6GHoAoKRtB-XyeaJFqnJbs00OzGZpNlMF6GwQ/gviz/tq?tqx=out:csv&sheet=Accounts` (swap the sheet name for other tabs). This works because the sheet is shared with anyone who has the link.

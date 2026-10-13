@@ -10,6 +10,8 @@ TIMEOUT = 30
 GOOGLE_VARS = ["GOOGLE_ADS_CLIENT_ID", "GOOGLE_ADS_CLIENT_SECRET", "GOOGLE_ADS_REFRESH_TOKEN"]
 GOOGLE_ADS_VARS = ["GOOGLE_ADS_DEVELOPER_TOKEN", "GOOGLE_ADS_LOGIN_CUSTOMER_ID"]
 META_BUSINESS_ID = "1517895191848391"
+# Pin the Graph API version: unversioned calls use the app's default, which Meta deprecates.
+META_API_VERSION = "v26.0"
 
 
 def report(name, ok, detail):
@@ -85,7 +87,7 @@ def check_meta():
         return
     params = {"access_token": token, "fields": "id,name", "limit": 500}
     resp = requests.get(
-        f"https://graph.facebook.com/{META_BUSINESS_ID}/owned_ad_accounts", params=params, timeout=TIMEOUT
+        f"https://graph.facebook.com/{META_API_VERSION}/{META_BUSINESS_ID}/owned_ad_accounts", params=params, timeout=TIMEOUT
     )
     if resp.status_code != 200:
         report("Meta", False, f"HTTP {resp.status_code}: {resp.text[:200]}")

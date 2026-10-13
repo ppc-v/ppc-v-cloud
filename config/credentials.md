@@ -41,7 +41,9 @@ Setup steps (needs a Business portfolio admin):
 3. Assign the system user the ad accounts (full control), Pages, Instagram accounts and pixels/datasets.
 4. Generate a token for the app with these permissions: `ads_management`, `ads_read`, `business_management`, `pages_show_list`, `pages_read_engagement`, `pages_manage_ads`, `leads_retrieval`, `instagram_basic`, `catalog_management`.
 
-Until then, Meta work can't run through the API. A personal token from Arif's account would work short term but expires and ties the setup to one person, so the system user is preferred.
+Status (2026-10-13): `META_ACCESS_TOKEN` is set for the system user "Claude PPC". It can read the portfolio's account list (255 owned + 10 client accounts), but only the 30 ad accounts assigned to it directly in step 3 can be used for insights or changes. Assign more accounts there as needed.
+
+Call the Graph API with an explicit version (currently `v26.0`); unversioned calls fall back to a deprecated default and fail with error #2635.
 
 ## WhatConverts
 | Variable | Where it comes from |

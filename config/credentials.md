@@ -9,7 +9,7 @@ One OAuth app and one sign-in as `paidsearch@vortala.com` covers all of them.
 
 | Variable | Where it comes from |
 |---|---|
-| `GOOGLE_ADS_DEVELOPER_TOKEN` | MCC → Tools → API Center → "View token". Basic Access (about 15,000 operations a day). |
+| `GOOGLE_ADS_DEVELOPER_TOKEN` | MCC → Tools → API Center → "View token". Currently **Test Access** only (checked 2026-10-14): it can't read or change real accounts until Google approves Explorer or Basic Access. |
 | `GOOGLE_ADS_CLIENT_ID` | Google Cloud project → APIs & Services → Credentials → OAuth client (type: Web application) |
 | `GOOGLE_ADS_CLIENT_SECRET` | Same OAuth client |
 | `GOOGLE_ADS_REFRESH_TOKEN` | OAuth Playground, signed in as paidsearch@vortala.com (steps below) |

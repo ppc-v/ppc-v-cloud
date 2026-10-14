@@ -10,6 +10,8 @@ TIMEOUT = 30
 GOOGLE_VARS = ["GOOGLE_ADS_CLIENT_ID", "GOOGLE_ADS_CLIENT_SECRET", "GOOGLE_ADS_REFRESH_TOKEN"]
 GOOGLE_ADS_VARS = ["GOOGLE_ADS_DEVELOPER_TOKEN", "GOOGLE_ADS_LOGIN_CUSTOMER_ID"]
 META_BUSINESS_ID = "1517895191848391"
+# Meta rejects unversioned calls once the app's default version is deprecated; bump when Meta deprecates this one.
+META_API_VERSION = "v26.0"
 
 
 def report(name, ok, detail):
@@ -63,10 +65,16 @@ def check_google():
 
             os.environ.setdefault("GOOGLE_ADS_USE_PROTO_PLUS", "true")
             client = GoogleAdsClient.load_from_env()
-            customers = client.get_service("CustomerService").list_accessible_customers()
-            report("Google Ads", True, f"{len(customers.resource_names)} directly accessible accounts")
+            # Listing accessible customers works even with a test-only developer token, so also query the MCC.
+            rows = client.get_service("GoogleAdsService").search(
+                customer_id=os.environ["GOOGLE_ADS_LOGIN_CUSTOMER_ID"],
+                query="SELECT customer_client.id FROM customer_client WHERE customer_client.manager = FALSE",
+            )
+            report("Google Ads", True, f"{sum(1 for _ in rows)} client accounts under the MCC")
         except Exception as e:  # noqa: BLE001
-            report("Google Ads", False, str(e)[:300])
+            failure = getattr(e, "failure", None)
+            detail = "; ".join(err.message for err in failure.errors) if failure else str(e)
+            report("Google Ads", False, detail[:300])
 
     for name, url, key in [
         ("Tag Manager", "https://tagmanager.googleapis.com/tagmanager/v2/accounts", "account"),
@@ -85,7 +93,7 @@ def check_meta():
         return
     params = {"access_token": token, "fields": "id,name", "limit": 500}
     resp = requests.get(
-        f"https://graph.facebook.com/{META_BUSINESS_ID}/owned_ad_accounts", params=params, timeout=TIMEOUT
+        f"https://graph.facebook.com/{META_API_VERSION}/{META_BUSINESS_ID}/owned_ad_accounts", params=params, timeout=TIMEOUT
     )
     if resp.status_code != 200:
         report("Meta", False, f"HTTP {resp.status_code}: {resp.text[:200]}")

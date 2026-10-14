@@ -7,6 +7,8 @@ Vortala PPC team's shared Claude workspace for Google Ads, Meta, GTM/GA4, WhatCo
 2. Begin your first message with your name or initials, e.g. `SS: pull last 7 days of leads for PP5416`. Claude tags commits and change logs with them.
 3. Ask in plain English. Mention the PP number or account name so Claude can find the right account.
 
+New here? Read the [quick start](guides/quick-start.md), then borrow from the [prompt playbook](guides/prompt-playbook.md). For your daily to-do list, say `daily health check`.
+
 ## What to expect
 - **Nothing changes without your approval.** Claude shows a preview (account, entity, before → after) and waits for a yes. Budget and bid changes include the daily and monthly effect. Batches across several accounts: you choose one approval or one per account.
 - **New campaigns, ad sets, ad groups and asset groups are created paused.** You switch them on.
@@ -23,6 +25,9 @@ Vortala PPC team's shared Claude workspace for Google Ads, Meta, GTM/GA4, WhatCo
 | `config/credentials.md` | Which API keys exist and how to renew them (names only, never values) |
 | `accounts/<pp-number>-<client>/notes.md` | What Claude remembers about each client: access level, preferences, history |
 | `logs/changes/` | One log per applied change batch: who asked, who approved, before → after |
+| `guides/` | Quick start and prompt playbook for the team |
+| `.claude/skills/` | Team workflows Claude follows the same way for everyone (e.g. `daily-health-check`) |
+| `scripts/inventory.py` | Reads the inventory sheet's accounts and issues, filtered by owner, flag level or account |
 
 ## If something isn't working
 Ask Claude to run `python3 scripts/check_connections.py`. It reports which connections (Google Ads, GTM, GA4, Search Console, Drive, the inventory sheet, Meta, WhatConverts) work, without printing any secrets. Keys live in the cloud environment's settings; after changing one, start a fresh session.

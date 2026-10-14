@@ -12,6 +12,8 @@ GOOGLE_ADS_VARS = ["GOOGLE_ADS_DEVELOPER_TOKEN", "GOOGLE_ADS_LOGIN_CUSTOMER_ID"]
 META_BUSINESS_ID = "1517895191848391"
 # Meta rejects unversioned calls once the app's default version is deprecated; bump when Meta deprecates this one.
 META_API_VERSION = "v26.0"
+INVENTORY_SHEET_ID = "1PHkhNJ6GHoAoKRtB-XyeaJFqnJbs00OzGZpNlMF6GwQ"
+INVENTORY_SCRIPT_ID = "1eatKDsUVvuawzBCdi5h-vYKZUSoAZ13Z3UrHq2g4ylBxmF9j82S6Lrvp"
 
 
 def report(name, ok, detail):
@@ -84,6 +86,19 @@ def check_google():
     ]:
         ok, detail = get_json(url, token, key)
         report(name, ok, detail)
+
+    # The inventory sheet and the Apps Script that refreshes it (IDs in config/accounts.md).
+    ok, detail = get_json(
+        f"https://sheets.googleapis.com/v4/spreadsheets/{INVENTORY_SHEET_ID}?fields=sheets.properties.title", token, "sheets"
+    )
+    report("Inventory sheet (Sheets API)", ok, detail.replace("found", "tabs") if ok else detail)
+    resp = requests.get(
+        f"https://script.googleapis.com/v1/projects/{INVENTORY_SCRIPT_ID}",
+        headers={"Authorization": f"Bearer {token}"},
+        timeout=TIMEOUT,
+    )
+    ok = resp.status_code == 200
+    report("Inventory Apps Script", ok, "readable" if ok else f"HTTP {resp.status_code}: {resp.text[:200]}")
 
 
 def check_meta():

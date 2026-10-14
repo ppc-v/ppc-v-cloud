@@ -24,3 +24,4 @@
 
 ## History and decisions
 - 2026-10-14 JW: built Search campaign "Perfect Patients" (24354926627), paused, Maximize Conversions, 3 ad groups / 9 keywords / 3 RSAs. Log: logs/changes/2026-10-14_1628Z_JW_pp2411-new-search-campaign.md
+- 2026-10-14 JW: added 8 campaign-level sitelinks and 10 callouts to "Perfect Patients". Log: logs/changes/2026-10-14_1635Z_JW_pp2411-sitelinks-callouts.md

@@ -9,7 +9,7 @@ One OAuth app and one sign-in as `paidsearch@vortala.com` covers all of them.
 
 | Variable | Where it comes from |
 |---|---|
-| `GOOGLE_ADS_DEVELOPER_TOKEN` | MCC → Tools → API Center → "View token". Basic Access (about 15,000 operations a day). As of 2026-10-14 the API still answers `CLOUD_PROJECT_NOT_APPROVED_FOR_PRODUCTION`: either the saved token isn't this one, or the Cloud project was first used with a test token and is locked to test accounts (fix: ask Google Ads API support to re-link it, or use a fresh Cloud project). |
+| `GOOGLE_ADS_DEVELOPER_TOKEN` | MCC → Tools → API Center → "View token". The token has Basic Access. |
 | `GOOGLE_ADS_CLIENT_ID` | Google Cloud project → APIs & Services → Credentials → OAuth client (type: Web application) |
 | `GOOGLE_ADS_CLIENT_SECRET` | Same OAuth client |
 | `GOOGLE_ADS_REFRESH_TOKEN` | OAuth Playground, signed in as paidsearch@vortala.com (steps below) |
@@ -26,6 +26,7 @@ Setup steps:
 5. paidsearch@vortala.com needs access in each product: a user on the MCC, a user on each GTM account (Publish permission), an Editor on each GA4 account, and a user in Merchant Center and Search Console where relevant.
 
 Notes:
+- The Google Cloud project has its **own** Google Ads API access level, separate from the token's: Cloud console → project `vortala-ppc-claude` → APIs & Services → Google Ads API → Access levels → Manage. It was Test on 2026-10-14 (error `CLOUD_PROJECT_NOT_APPROVED_FOR_PRODUCTION`) and Arif applied for Explorer. Test can't touch real accounts; Explorer can, with a lower daily limit than Basic.
 - The developer token's "Intended use" says Reporting. Update it in the API Center to include campaign management before making changes through the API.
 - The token's API contact is timo@vortala.com, who receives Google's notices about it.
 

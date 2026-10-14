@@ -1,3 +1,4 @@
-google-ads
-facebook-business
-requests
+# Pinned so a new release can't break every session at once. Upgrade deliberately: bump, run scripts/check_connections.py, commit.
+google-ads==33.0.0
+facebook-business==26.0.2
+requests==2.34.2

@@ -12,6 +12,7 @@ GOOGLE_ADS_VARS = ["GOOGLE_ADS_DEVELOPER_TOKEN", "GOOGLE_ADS_LOGIN_CUSTOMER_ID"]
 META_BUSINESS_ID = "1517895191848391"
 # Meta rejects unversioned calls once the app's default version is deprecated; bump when Meta deprecates this one.
 META_API_VERSION = "v26.0"
+META_CLOSED = 101  # ad account_status for a closed account
 INVENTORY_SHEET_ID = "1PHkhNJ6GHoAoKRtB-XyeaJFqnJbs00OzGZpNlMF6GwQ"
 INVENTORY_SCRIPT_ID = "1eatKDsUVvuawzBCdi5h-vYKZUSoAZ13Z3UrHq2g4ylBxmF9j82S6Lrvp"
 
@@ -106,14 +107,36 @@ def check_meta():
     if not token:
         report("Meta", False, "not set: META_ACCESS_TOKEN")
         return
-    params = {"access_token": token, "fields": "id,name", "limit": 500}
-    resp = requests.get(
-        f"https://graph.facebook.com/{META_API_VERSION}/{META_BUSINESS_ID}/owned_ad_accounts", params=params, timeout=TIMEOUT
-    )
-    if resp.status_code != 200:
-        report("Meta", False, f"HTTP {resp.status_code}: {resp.text[:200]}")
+    base = f"https://graph.facebook.com/{META_API_VERSION}"
+
+    def all_pages(path, fields):
+        accounts, url, params = {}, f"{base}/{path}", {"access_token": token, "fields": fields, "limit": 500}
+        while url:
+            resp = requests.get(url, params=params, timeout=TIMEOUT)
+            if resp.status_code != 200:
+                raise RuntimeError(f"{path}: HTTP {resp.status_code}: {resp.text[:200]}")
+            body = resp.json()
+            accounts.update({a["id"]: a for a in body.get("data", [])})
+            url, params = body.get("paging", {}).get("next"), None  # the next link already carries the params
+        return accounts
+
+    try:
+        owned = all_pages(f"{META_BUSINESS_ID}/owned_ad_accounts", "id,name,account_status")
+        shared = all_pages(f"{META_BUSINESS_ID}/client_ad_accounts", "id,name,account_status")
+        assigned = all_pages("me/adaccounts", "id")
+    except RuntimeError as e:
+        report("Meta", False, str(e))
         return
-    report("Meta", True, f"{len(resp.json().get('data', []))} ad accounts visible (first page)")
+    portfolio = {**owned, **shared}
+    # Closed accounts (status 101) can't be assigned to the system user; every other account should be.
+    unassigned = [a for i, a in portfolio.items() if i not in assigned and a.get("account_status") != META_CLOSED]
+    open_count = sum(1 for a in portfolio.values() if a.get("account_status") != META_CLOSED)
+    detail = f"{open_count} open ad accounts in the portfolio ({len(owned)} owned + {len(shared)} client, closed included)"
+    if unassigned:
+        names = ", ".join(f"{a.get('name')} ({a['id']})" for a in unassigned)
+        report("Meta", False, f"{detail}; not assigned to the system user: {names[:500]}")
+    else:
+        report("Meta", True, f"{detail}; all assigned to the system user")
 
 
 def check_whatconverts():

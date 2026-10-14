@@ -26,8 +26,11 @@ New here? Read the [quick start](guides/quick-start.md), then borrow from the [p
 | `accounts/<pp-number>-<client>/notes.md` | What Claude remembers about each client: access level, preferences, history |
 | `logs/changes/` | One log per applied change batch: who asked, who approved, before → after |
 | `guides/` | Quick start and prompt playbook for the team |
-| `.claude/skills/` | Team workflows Claude follows the same way for everyone (e.g. `daily-health-check`) |
+| `.claude/skills/` | Team workflows Claude follows the same way for everyone: `daily-health-check`, `budget-pacing`, `tracking-audit` |
 | `scripts/inventory.py` | Reads the inventory sheet's accounts and issues, filtered by owner, flag level or account |
+| `scripts/pacing.py` | Month-to-date spend vs the Salesforce monthly budget, projected month end and run-out date |
+| `scripts/tracking_audit.py` | Collects one client's tracking setup across Google Ads, the site, GTM, GA4, Meta and WhatConverts |
+| `config/gtm_containers.json` | Index of the GTM containers paidsearch@ can see (rebuilt by the tracking audit) |
 
 ## If something isn't working
 Ask Claude to run `python3 scripts/check_connections.py`. It reports which connections (Google Ads, GTM, GA4, Search Console, Drive, the inventory sheet, Meta, WhatConverts) work, without printing any secrets. Keys live in the cloud environment's settings; after changing one, start a fresh session.

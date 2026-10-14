@@ -44,8 +44,10 @@ SS: pacing for my accounts: month-to-date vs monthly budget, projected month end
 JW: raise PP5416 to AUD 100/day. Show daily and monthly effect
 IA: which accounts are losing over 50% of searches to budget?
 SS: PP4956 is spending 195% of budget yesterday. Why?
+JW: which of my accounts will run out of budget before the 31st, and what daily budget fixes it?
+IA: pacing for everyone, only the accounts that need action
 ```
-Every budget or bid change gets a preview with the daily and monthly effect.
+Uses the `budget-pacing` skill: budgets come from Salesforce (Paid Advertising Project), and "runs out early" means the monthly budget rule will pause the account before month end. Every budget or bid change gets a preview with the daily and monthly effect.
 
 ## Ads and creative
 ```
@@ -62,7 +64,10 @@ IA: audit conversion tracking on PP0519: Google goals, GA4, GTM, WhatConverts
 JW: which of my accounts count button clicks or page views as primary conversions?
 SS: PP1654 pixel: is it firing, and what events?
 IA: set up form-submit and call tracking for PP3906 in GTM. Workspace only, show me before publishing
+SC: PP1654 says TRACKING_STOPPED. Run a tracking audit
+JW: tracking audit sweep on my Google accounts, red and orange findings only
 ```
+Uses the `tracking-audit` skill. Calls and leads are only ever reported as counts; patient details from WhatConverts never appear.
 
 ## Building and structure
 ```

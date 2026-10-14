@@ -2,3 +2,4 @@
 google-ads==33.0.0
 facebook-business==26.0.2
 requests==2.34.2
+tzdata==2026.5

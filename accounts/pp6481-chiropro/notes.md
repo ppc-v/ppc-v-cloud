@@ -18,6 +18,8 @@
 - Shared negative lists: Stock (137), Competitors (30), St Charles (27), Account Level (2,177).
 
 ## Tracking
+- **Call reporting (Sara, 2026-10-15):** Google call reporting stays OFF on the call assets on purpose. Calls come in through WhatConverts ("Calls from Ad Extensions" / "Calls from Google Ads") so they aren't double counted. Don't turn it on.
+- **WhatConverts:** account 91490, one profile per office (Troy 144559, Shiloh 144558, Highland 144557, Columbia 144556, St. Charles 138062). Each office has an "All Traffic" website number, a "Google Ad Extension" number (used on the call assets) and a "GBP Ad Extension" number.
 - Primary goals: Calls from Google Ads (click import), Calls from Ad Extensions (call upload), Calls from ads, Custom Form Submission (GA4), Book Appointment Page Views (GA4, weak goal per the inventory sheet). "Contact ... Pageview" actions also counted 6 conversions between 17 Aug and 14 Oct.
 
 ## History and decisions
@@ -30,3 +32,12 @@
   - Check the Search Partners setting.
   - Split the campaign by office with matching landing pages.
   - Recheck pacing around 22 Oct.
+- 2026-10-15 SS: built 5 per-office Search campaigns, all PAUSED (log `logs/changes/2026-10-15_1938Z_SS_pp6481-office-campaigns.md`): St Charles 24365678317, Shiloh 24365678062, Columbia 24354624228, Troy 24365679790, Highland 24365678077.
+  - Budgets: USD 45/45/25/20/15 per day.
+  - Ads use the current office pages until Sara's new landing pages are ready.
+  - Removed 16 in-radius towns from the office negative lists.
+  - Next steps:
+    - When Sara switches them on, pause "Perfect Patients".
+    - 1 Nov reminder (trig_01L5Q4pghAiyUaBzAPyKe1ZS) sets the November budgets to 70/70/40/30/25 (USD 235/day).
+    - Swap the final URLs when the new landing pages are ready.
+- Services: the office pages promote neuropathy care, so ChiroPro offers it. Don't add neuropathy negatives.

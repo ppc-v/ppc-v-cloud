@@ -22,3 +22,4 @@
 - 2026-10-06 client (drken19@) created Smart campaign "Chiropractic Therapy Treatment"; 2026-10-13 SS paused it.
 - 2026-10-15 SS: 18-month performance review of Perfect Patients (Apr 2025–Oct 2026). Main issues: Quality Score 1–2, CPC up from ~$15 to $21–29 since Jul 2026, ~85% of impressions lost to budget, weak/broken goals.
 - 2026-10-15: PP0315 Marsteller was hit by the same kind of spam campaigns on 2026-04-27/29, which points to a compromise wider than this one account (possibly MCC level).
+- 2026-10-15 SS: drafted a shortened landing page for /chiropractor-in-edmonton/ (landing-page-chiropractor-in-edmonton-v2.html): no new-patient offer; primary conversions are calls and the Chiropractic Appointment Request form; 4.8 stars from 100+ reviews (90 five-star). Not yet published.

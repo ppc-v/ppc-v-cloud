@@ -24,3 +24,4 @@
 - 2026-10-15: PP0315 Marsteller was hit by the same kind of spam campaigns on 2026-04-27/29, which points to a compromise wider than this one account (possibly MCC level).
 - 2026-10-15 SS: drafted a shortened landing page for /chiropractor-in-edmonton/ (landing-page-chiropractor-in-edmonton-v2.html): no new-patient offer; primary conversions are calls and the Chiropractic Appointment Request form; 100+ reviews, 4.8 avg, 90 five-star; SS prefers no review-count claims on the page (2026-10-15). Not yet published.
 - 2026-10-15 SS: RSA 400135192233 got 3 new headlines and Treaty 6 description replaced (see logs/changes/2026-10-15_1820Z_SS_pp4637-rsa-headlines.md). SS publishing new landing page at the same URL.
+- 2026-10-15 SS: didn't love v2 layout; v3 drafted (landing-page-chiropractor-in-edmonton-v3.html): call button in hero, benefit tiles, Dr. Chan with photo, price cards, 3 testimonial cards, team photo removed.

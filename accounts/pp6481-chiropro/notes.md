@@ -24,3 +24,9 @@
 - 2026-04-27/28: account hijacked. 12 spam Search campaigns ("SANI-...", "Roy-..."; URLs such as juno-pack.com, pakar-seo.com, bluevillasmallorca.com, typeform) spent about USD 1,072. All are removed, but their ad groups and ads remain. The same April window as the PP5416 hijack.
 - 2026-09-21 SS: campaign renamed, ECPC toggled, keyword bids raised, the five radius targets replaced, ad schedule edited, keywords added. 2026-10-01 SS: one keyword status change and one campaign negative ("cigna").
 - 2026-10-15 SS: performance review (CPL_UP flag). Over 17 Aug–14 Oct: USD 14.3k for 39 conversions, about 30 of them real leads. Broad "chiropractor" cost USD 5.9k for 8 conversions; broad "chiropractic adjustment near me" cost USD 2.0k for 0. Broad match is pulling in symptom, product and competitor searches at about USD 35 a click. Missouri suburbs outside St Charles (Cottleville, St Peters, St Louis and others) cost about USD 5.2k for 4 conversions. Pacing: about USD 10.4k projected against the USD 7.2k budget, running out around 22 Oct. Recommendations given; nothing changed yet.
+- 2026-10-15 SS: applied (log `logs/changes/2026-10-15_1908Z_SS_pp6481-budget-keywords-negatives.md`). Daily budget cut from USD 405 to USD 150. Broad `chiropractor` and broad `chiropractic adjustment near me` paused. 56 phrase negatives added to Account Level Negative Keywords. Mobile and desktop bid adjustments reset to 0%. Book Appointment Page Views made secondary. Still open:
+  - Check "oak street health" conversions in WhatConverts.
+  - Confirm which services the client offers (neuropathy, softwave, decompression, scoliosis).
+  - Check the Search Partners setting.
+  - Split the campaign by office with matching landing pages.
+  - Recheck pacing around 22 Oct.

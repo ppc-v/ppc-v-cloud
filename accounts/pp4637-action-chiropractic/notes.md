@@ -21,3 +21,4 @@
 - 2026-04-28: account hijacked: ~70 unauthorised "DR-…/mec-…/CBH-…" Search campaigns spent ~CAD 612 in one day, then the account went dark until June 2026. Campaigns are now removed.
 - 2026-10-06 client (drken19@) created Smart campaign "Chiropractic Therapy Treatment"; 2026-10-13 SS paused it.
 - 2026-10-15 SS: 18-month performance review of Perfect Patients (Apr 2025–Oct 2026). Main issues: Quality Score 1–2, CPC up from ~$15 to $21–29 since Jul 2026, ~85% of impressions lost to budget, weak/broken goals.
+- 2026-10-15: PP0315 Marsteller was hit by the same kind of spam campaigns on 2026-04-27/29, which points to a compromise wider than this one account (possibly MCC level).

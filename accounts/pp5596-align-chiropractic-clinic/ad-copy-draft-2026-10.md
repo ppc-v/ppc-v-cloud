@@ -1,6 +1,6 @@
 # PP5596 – new RSA drafts (October 2026)
 
-Status: **draft, not built.** Requested by SS on 2026-10-16. All lines are within limits (headlines ≤30, descriptions ≤90).
+Status: **built and live 2026-10-16** (RSAs 828254234349–828254234364, see logs/changes/2026-10-16_1357Z_SS_pp5596-new-rsas.md). The "2 Locations" ads are in the paused Eastside campaign, so they were left alone. Requested by SS on 2026-10-16. All lines are within limits (headlines ≤30, descriptions ≤90).
 
 Facts used (from the landing pages, 16 Oct): $20 new patient special (full exam, consultation, report of findings); most major insurance and CareCredit; open since 2014 (Dr. Johns); dry needling, Graston, sports injury care, pregnancy and pediatric care, cryotherapy, spinal decompression; Osage Beach has on-site X-ray and sits near Lake Regional Hospital. 3 locations (SS, 16 Oct: both Jefferson City locations now run through one campaign).
 

@@ -41,3 +41,4 @@
     - 1 Nov reminder (trig_01L5Q4pghAiyUaBzAPyKe1ZS) sets the November budgets to 70/70/40/30/25 (USD 235/day).
     - Swap the final URLs when the new landing pages are ready.
 - Services: the office pages promote neuropathy care, so ChiroPro offers it. Don't add neuropathy negatives.
+- 2026-10-16 SS: switched over (log `logs/changes/2026-10-16_1836Z_SS_pp6481-switch-to-office-campaigns.md`). The 5 office campaigns are ENABLED and "Perfect Patients" (23580321327) is PAUSED, with its history kept. First serving Mon 19 Oct. Check per-office results after the first week. Landing pages stay on the existing /[city]-chiropractor/ pages (Sara confirmed no new pages).

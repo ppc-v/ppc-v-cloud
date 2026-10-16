@@ -23,3 +23,4 @@
 - 2026-10-08 to 10-14 SS: built form-fill custom conversions; new "PP1654 - Lead Gen Campaign" (optimising for form fills), $10/day; traffic campaign paused 10-14.
 - 2026-10-16 SS: drafted client performance summary recommending a shift of focus to active adults/sports/pain with pediatric as secondary.
 - 2026-10-16 SS: tried to switch Pediatric AdSet goal from the broken "Appt Requests" to "Appt Form Submission"; Meta blocks goal edits on published ad sets (see logs/changes).
+- 2026-10-16 SS: created "Pediatric AdSet - Form Fills" (120252912927790220, paused, goal Appt Form Submission). Ad creation failed: system user lacks advertiser access to the Page 291780357563991. Old Pediatric AdSet still active.

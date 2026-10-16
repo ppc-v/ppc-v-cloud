@@ -42,3 +42,4 @@
     - Swap the final URLs when the new landing pages are ready.
 - Services: the office pages promote neuropathy care, so ChiroPro offers it. Don't add neuropathy negatives.
 - 2026-10-16 SS: switched over (log `logs/changes/2026-10-16_1836Z_SS_pp6481-switch-to-office-campaigns.md`). The 5 office campaigns are ENABLED and "Perfect Patients" (23580321327) is PAUSED, with its history kept. First serving Mon 19 Oct. Check per-office results after the first week. Landing pages stay on the existing /[city]-chiropractor/ pages (Sara confirmed no new pages).
+- 2026-10-16 SS: added the 14 website images and a new 512×512 "CP" business logo (asset 430634665984) to the 5 office campaigns (log `logs/changes/2026-10-16_1843Z_SS_pp6481-images-logo.md`). The old 32×32 logo (252158346720) stays only on the paused old campaign. If an original high-resolution logo file turns up, swap it in.

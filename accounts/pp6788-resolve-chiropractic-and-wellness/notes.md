@@ -14,10 +14,11 @@
 
 ## Tracking
 - Primary conversions: WhatConverts call imports ("Calls From Ad Extensions", "Calls From Google Ads"), GA4 forms (New Patient appt, Current Patient appt, Contact Us).
-- Issue (2026-10-16): every imported call counts, including sub-30s and existing-patient calls, and the Current Patient form is primary. Proposed moving to quotable or 60s+ calls only, with the current-patient form as secondary. Not changed yet.
+- Every WhatConverts call import counts as a primary conversion, including sub-30s and existing-patient calls. Proposed importing only quotable or 60s+ calls (not done). Current Patient form set to secondary 2026-10-16.
 - Only 8 of 29 google/cpc WhatConverts calls carry a GCLID (normal for call-extension calls).
 
 ## History and decisions
 - 2026-09-29 SS: brand negatives added (resolve, dr, Mistry, practice name).
 - 2026-10-14 SS: sitelinks, callouts, structured snippet and image assets added.
 - 2026-10-16 SS: first 30-day review (review-2026-10-16.md). ~22% of spend went to competitor and PT/ortho searches; 38% of ad calls went unanswered.
+- 2026-10-16 SS: 172 phrase negatives added to the Competitor and Search Queries shared lists, "chiropractor" broad paused, Current Patient form set to secondary (log: logs/changes/2026-10-16_1616Z_SS_pp6788-negatives-goals.md). New Patient form counting is GA4-controlled, so it could not be changed in Ads. Open questions: Frisco/McKinney, Spanish, shockwave/softwave services.

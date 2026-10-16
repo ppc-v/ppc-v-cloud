@@ -14,7 +14,7 @@
 
 ## Tracking
 - Primary conversions: WhatConverts call imports ("Calls From Ad Extensions", "Calls From Google Ads"), GA4 forms (New Patient appt, Current Patient appt, Contact Us).
-- Every WhatConverts call import counts as a primary conversion, including sub-30s and existing-patient calls. Proposed importing only quotable or 60s+ calls (not done). Current Patient form set to secondary 2026-10-16.
+- From 2026-10-16, WhatConverts sends only calls of 30s+ to Google Ads (set by SS). Existing-patient calls still count. The Current Patient form is secondary, and the New Patient form counts one per click.
 - Only 8 of 29 google/cpc WhatConverts calls carry a GCLID (normal for call-extension calls).
 
 ## History and decisions
@@ -24,3 +24,4 @@
 - 2026-10-16 SS: 172 phrase negatives added to the Competitor and Search Queries shared lists, "chiropractor" broad paused, Current Patient form set to secondary (log: logs/changes/2026-10-16_1616Z_SS_pp6788-negatives-goals.md). New Patient form counting could not be set through the API; SS changed it to One per click herself (confirmed). 
 - 2026-10-16 SS: blocked McKinney and Frisco (over 12 mi from the practice; SS's geo rule for this account), plus softwave and laser. Asked WhatConverts to send only 30s+ calls to Google Ads; this has to be set in the WhatConverts UI.
 - 2026-10-16 SS: 16 Spanish-language phrase negatives added to the Search Queries list.
+- 2026-10-16 SS: WhatConverts call import limited to 30s+ calls. Conversion counts from this date aren't comparable to the first 30 days.

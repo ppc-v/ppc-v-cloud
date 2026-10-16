@@ -20,4 +20,5 @@
 - **"Calls from Website" (7683627117):** older tap action, never fired, made secondary 2026-10-16.
 
 ## History and decisions
-- 2026-10-16 SS: removed "LP Phone Tap" (7849571497) and created "Landing Page Phone Tap" (7849561377, send_to `AW-598318905/k2jVCKGa-54dELm-pp0C`). Waiting for the snippet to be added to the landing page.
+- 2026-10-16 SS: removed "LP Phone Tap" (7849571497) and created "Landing Page Phone Tap" (7849561377, send_to `AW-598318905/k2jVCKGa-54dELm-pp0C`). Snippet added site-wide the same day (see below).
+- 2026-10-16 SS: Sara added the tap snippet to the site-wide scripts. Confirmed on the landing page, homepage and Contact Us (once per page). A headless phone-browser test tap on the landing page and Contact Us fired the "Landing Page Phone Tap" conversion (send_to AW-598318905/k2jVCKGa-54dELm-pp0C; Google's usual pair of requests). The test requests were blocked, so nothing was recorded. Next: check real taps appear in Google Ads after ad traffic.

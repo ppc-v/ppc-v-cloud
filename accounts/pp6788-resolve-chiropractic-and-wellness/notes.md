@@ -9,7 +9,7 @@
 - Location: Celina, TX area. 5 proximity radii (1–8 mi). Timezone America/Chicago, USD.
 
 ## Goals and preferences
-- Offer: $37 New Patient Special. Offers shockwave; no SoftWave or laser (SS, 2026-10-16). Same-day and walk-in appointments, insurance accepted.
+- Offer: $37 New Patient Special. Offers shockwave; no SoftWave or laser. No Spanish-speaking service, so Spanish searches are blocked (SS, 2026-10-16). Same-day and walk-in appointments, insurance accepted.
 - Reporting: the 30-day review is internal. Sara writes the DMS update herself. No client email drafts needed.
 
 ## Tracking
@@ -23,3 +23,4 @@
 - 2026-10-16 SS: first 30-day review (review-2026-10-16.md). ~22% of spend went to competitor and PT/ortho searches; 38% of ad calls went unanswered.
 - 2026-10-16 SS: 172 phrase negatives added to the Competitor and Search Queries shared lists, "chiropractor" broad paused, Current Patient form set to secondary (log: logs/changes/2026-10-16_1616Z_SS_pp6788-negatives-goals.md). New Patient form counting could not be set through the API; SS changed it to One per click herself (confirmed). 
 - 2026-10-16 SS: blocked McKinney and Frisco (over 12 mi from the practice; SS's geo rule for this account), plus softwave and laser. Asked WhatConverts to send only 30s+ calls to Google Ads; this has to be set in the WhatConverts UI.
+- 2026-10-16 SS: 16 Spanish-language phrase negatives added to the Search Queries list.

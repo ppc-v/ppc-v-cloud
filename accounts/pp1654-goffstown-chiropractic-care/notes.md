@@ -24,3 +24,4 @@
 - 2026-10-16 SS: drafted client performance summary recommending a shift of focus to active adults/sports/pain with pediatric as secondary.
 - 2026-10-16 SS: tried to switch Pediatric AdSet goal from the broken "Appt Requests" to "Appt Form Submission"; Meta blocks goal edits on published ad sets (see logs/changes).
 - 2026-10-16 SS: created "Pediatric AdSet - Form Fills" (120252912927790220, paused, goal Appt Form Submission). Ad creation failed: system user lacks advertiser access to the Page 291780357563991. Old Pediatric AdSet still active.
+- 2026-10-16 SS: SS added the ad in Ads Manager; new Pediatric AdSet - Form Fills switched on, old Pediatric AdSet paused.

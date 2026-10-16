@@ -15,7 +15,7 @@
 
 ## Tracking
 - Meta custom conversions (pixel PageView + URL): "Appt Form Submission" 1107897131731829 (`/info/new-patient-thank-you/`, the lead goal), "Contact Us Submission" 1640520557713362 (`/info/contact-thank-you/`, LEAD), "Current Patient Form Submission" 1642658833902176 (not a lead). "Appt Requests" 2025667461473803 is archived and broken (ANDs two URLs).
-- Automatic advanced matching is on for the pixel (em, fn, ln, ph, ge, zp, ct, st), flagged to SS under the default patient-data rule; no decision yet.
+- Automatic advanced matching turned OFF 2026-10-16 (SS) under the default patient-data rule.
 - Ad URLs still carry utm_campaign=PP1654-Website Visits.
 
 ## History and decisions

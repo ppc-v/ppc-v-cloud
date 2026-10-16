@@ -24,6 +24,7 @@ orthopedic; orthopedics; orthopaedic; orthopedist; ortho; rheumatology; rheumato
 
 ## Failed or skipped
 - "Appointment Request (New Patient)" (7757753940): change counting from Every to One per click. Skipped because the API returned `IMMUTABLE_FIELD`: the action is imported from GA4, so GA4 controls counting. Not retried.
+- Follow-up: SS changed it to One per click herself. Read back from the API on 2026-10-16: `ONE_PER_CLICK`, still primary.
 
 ## Notes
 - Reason: about 22% of the first 30 days' spend went to competitor, orthopedic/PT and off-topic searches. Run against all 779 search terms since launch, the new negatives would have blocked 266 terms, $758 of spend and 5 conversions (all competitor-name searches). They don't block any active keyword.

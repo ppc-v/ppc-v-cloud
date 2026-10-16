@@ -12,6 +12,8 @@
 - Monthly Google budget: USD 2,500 (per SS, 2026-10-16; Salesforce not checked). Ads run weekdays only.
 - Offer in ads: $20 new patient special (exam, consult, report of findings), insurance accepted.
 - Campaigns: "Chiropractor - Jefferson City" ($125/day) and "Chiropractor - Osage Beach" ($75/day), Manual CPC, Mon–Thu 08:00–17/18:00, Fri 08:00–12:00. "Chiropractor (Eastside)" paused since Aug 2026.
+- 3 locations (Osage Beach, Jefferson City Westside and Eastside). SS combined both Jefferson City locations into the "Chiropractor - Jefferson City" campaign in Aug 2026 to help the budget; ads should still say "3 Locations" (SS, 2026-10-16).
+- Services (site, 2026-10): sports injury care (offered, don't negate), dry needling, Graston, pregnancy, pediatric, cryotherapy, spinal decompression; on-site X-ray at Osage Beach. No 3D neck scans (SS).
 - Brand terms (align, aline, aligned, align chiropractic) are campaign negatives.
 
 ## Tracking
@@ -22,4 +24,6 @@
 - 2026-10-16 SS: performance review (last 30 days to 15 Oct): JC $1,642 / 7 conv ($235 CPL, $26 CPC); Osage $1,073 / 10 conv ($107 CPL). Spending ~65% of daily budget; impression share lost to rank (49–59%), not budget. Expected CTR below average on every keyword. Recommendations given; nothing changed yet.
 - 2026-10-16 SS: budget confirmed at $2,500/month. October MTD $1,511 through 15 Oct; at the last 7 days' rate (~$153 per weekday) it runs out around 26 Oct. Proposed combined daily ~$90 (preview only).
 - 2026-10-16 SS: daily budgets lowered JC $125→$50, Osage $75→$40 to pace October (logs/changes/2026-10-16_1346Z_SS_pp5596-budget-pacing.md). Raise again on 1 Nov.
-- 2026-10-16 SS: JC broad `chiropractor` and `chiropractor jefferson city` paused; `chiropractor jefferson city` exact ($27) and phrase ($24) re-enabled; 13 phrase negatives added to Search Queries list (logs/changes/2026-10-16_1349Z_SS_pp5596-keywords-negatives.md). Open: does the clinic offer 3D neck scans / sports injury care?
+- 2026-10-16 SS: JC broad `chiropractor` and `chiropractor jefferson city` paused; `chiropractor jefferson city` exact ($27) and phrase ($24) re-enabled; 13 phrase negatives added to Search Queries list (logs/changes/2026-10-16_1349Z_SS_pp5596-keywords-negatives.md).
+- 2026-10-16 SS: `3d neck scan` negative added. New RSA drafts in ad-copy-draft-2026-10.md (not built). Refund for the April hack spend requested from Google, still waiting (SS).
+- Scheduled: 1 Nov budget raise to JC $70 / Osage $50 (trig_01KBhUadhWzNJN28jduxQtNC); 5 Nov Jefferson City check (trig_01UAez1CH8Zb5FmzY4SGL8Eo).

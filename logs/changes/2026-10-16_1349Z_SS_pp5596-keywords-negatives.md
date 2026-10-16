@@ -25,3 +25,10 @@ None. Deliberately not added: `medicare` (would block Medicare-accepting searche
 ## Notes
 - Reason: 90 days to 15 Oct, `chiropractor` broad cost USD 1,645 for 9 leads (USD 183/lead) at a USD 29 bid; `chiropractor jefferson city` broad USD 497 for 1 lead. The exact `jefferson city chiropractor` converts at ~USD 61/lead; top search term "chiropractor jefferson city mo" (9 leads) is now covered by the phrase keyword.
 - Check in 2–3 weeks: Jefferson City lead volume and CPL; whether impression share on the exact/phrase terms improves.
+
+## Addendum 13:53 UTC (09:53 US Eastern)
+| Account | Entity | Field | Before | After | Result |
+|---|---|---|---|---|---|
+| PP5596 (128-340-8501) | Shared negative list "Search Queries" (10720596569) | Phrase negative `3d neck scan` added | 1,140 members | 1,141 members | ✅ applied |
+
+Approved by SS in chat ("not 3d neck scans"). SS confirmed the clinic offers sports injury care, so `sports doctor` stays un-negated.

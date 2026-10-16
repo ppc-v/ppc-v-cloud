@@ -10,7 +10,7 @@
 
 ## Goals and preferences
 - Offer: $37 New Patient Special. Same-day and walk-in appointments, insurance accepted.
-- Report format and email tone: not confirmed yet.
+- Reporting: the 30-day review is internal. Sara writes the DMS update herself. No client email drafts needed.
 
 ## Tracking
 - Primary conversions: WhatConverts call imports ("Calls From Ad Extensions", "Calls From Google Ads"), GA4 forms (New Patient appt, Current Patient appt, Contact Us).

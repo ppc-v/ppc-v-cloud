@@ -1,6 +1,6 @@
 # PP5372: 108 campaign negatives, radius 5 mi → 8 mi
 
-- **When:** 2026-10-19 12:15 UTC (08:15 US Eastern)
+- **When:** 2026-10-19 11:53 UTC (07:53 US Eastern)
 - **Requested by:** SS
 - **Approved by:** SS in chat: "add any negatives you see fit - adjust the radius as long as it won't further limit the budget too much and effect performance" (picking the values left to Claude)
 - **Platform:** Google Ads

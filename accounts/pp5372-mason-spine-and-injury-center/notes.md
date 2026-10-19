@@ -8,8 +8,8 @@
 - **Usually worked on by:** Sara (Google label)
 
 ## Setup (as of 2026-10-19)
-- One Search campaign, "Perfect Patients" (11773819584): manual CPC, $87/day, Mon–Thu 9:00–18:00 only, mobile +15%, desktop/tablet -50%, Search Partners on.
-- Location: 2 mi and 5 mi radius around 969 Reading Rd, Mason OH 45040, set to "presence or interest", plus 372 excluded locations.
+- One Search campaign, "Perfect Patients" (11773819584): manual CPC, $87/day, Mon–Thu 9:00–18:00 only, mobile +15%, desktop/tablet -50%, Search Partners off (2026-10-19).
+- Location: 2 mi and 8 mi radius around 969 Reading Rd, Mason OH 45040, presence only (changed 2026-10-19), plus 372 excluded locations (most Ohio counties outside the area, Cincinnati city, some zips, many countries).
 - An automated rule pauses the campaign when the monthly budget is reached and restarts it on the 1st (paused 28 Sep, restarted 1 Oct 2026).
 - Landing page: https://www.masonsaic.com/chiropractor-mason-oh/
 
@@ -22,4 +22,5 @@
 - 2026-09-23 SS: removed the "Mason Spine & Injury" business name asset and created "Mason Spine&Injury Center"; set the broad "chiropractor near me" bid to $25.80. As of 2026-10-19 no business name asset is linked to the campaign.
 - 2026-10-19 SS asked for a performance review because October was slow. Findings: leads 14 in Sep → 2 in Oct 1–19 (WhatConverts agrees: last paid call 7 Oct), CTR 3.0% → 1.8%. Main causes: the broad "chiropractor near me" keyword matching condition and medication searches (87% of October spend), a call-only ad taking about 28% of impressions with almost no clicks, no business name on the ads, Poor ad strength on the main ad. No changes made yet.
 - 2026-10-19 SS: paused the broad "chiropractor near me" keyword and the call-only ad, linked the "Mason Spine&Injury Center" business name, re-enabled two "Good" RSAs (612949126771, 612948941659), set location to presence only, turned Search Partners off. See `logs/changes/2026-10-19_1150Z_SS_pp5372-october-review-fixes.md`. Still to do: negatives, radius, ad schedule. Check results around 2026-11-02.
+- 2026-10-19 SS: added 108 campaign negatives (condition names as exact, wrong providers/meds/competitors as phrase) and changed the radius from 5 to 8 mi (presence only). See `logs/changes/2026-10-19_1215Z_SS_pp5372-negatives-radius.md`. Salesforce budget: $1,500/month (Google), billing day 13.
 - Business names are limited to 25 characters, so "Mason Spine & Injury Center" doesn't fit. "Mason Spine&Injury Center" is used.

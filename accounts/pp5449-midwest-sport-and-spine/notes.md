@@ -17,7 +17,7 @@
 - No "evening" claims: Noblesville closes 6:30 pm, Greenwood 5:30 pm.
 - The Greenwood office was formerly **Dyer Chiropractic**, so don't add "dyer"/"dryer" as negatives.
 - Website says "in-network with all insurance providers in Indiana" and offers CareCredit.
-- Office hours (website, Oct 2026): Noblesville Mon/Wed/Thu 7:30–1, 2:30–6:30; Tue 2:30–6:30; Fri 7:30–12. Greenwood Mon/Tue/Thu 8:30–5:30; Wed 6:30–5; Fri 6:30–2. The Greenwood ad schedule doesn't run on Friday, even though the office is open.
+- Office hours (website, Oct 2026): Noblesville Mon/Wed/Thu 7:30–1, 2:30–6:30; Tue 2:30–6:30; Fri 7:30–12. Greenwood Mon/Tue/Thu 8:30–5:30; Wed 6:30–5; Fri 6:30–2. Ad schedule is kept as is on purpose (SS, 2026-10-19): Greenwood doesn't run Fridays. Don't suggest changing it.
 - Chiropractors: Dr. Abraham Beaber (DACBSP, founder; Noblesville M/W/Th, Greenwood Tu/F), Dr. Kyle Tiefel, Dr. William Andrew Carroll.
 
 ## Tracking
@@ -35,4 +35,4 @@
 - 2026-10-16 SS: applied budgets $388 → $215/day (paced to the $5,000 cap), search partners off, lower broad bids, new Greenwood keywords, 15 phrase negatives per campaign. See logs/changes/2026-10-16_1432Z_SS_pp5449-budgets-partners-keywords-negatives.md.
 - 2026-10-16 SS tracking audit: verdict "calls double counted". Every Google-tracked call from Jul to Sep also came in as a WhatConverts upload on the same day: about 13 duplicates in 90 days, none since 21 Sep. WhatConverts saw 73 google/cpc calls in 90 days (about 30 tagged new patient, 11 existing). Fixed 14:36 UTC (see logs/changes/2026-10-16_1436Z_SS_pp5449-call-tracking-and-headline.md).
 - 2026-10-16 SS: current conversion setup. Primary: "Calls from ads" (Google call assets, 30 s minimum at SS's request, one per click), "Calls from Google Ads" (WhatConverts website calls with click ID), "Appointment Request Submission" (GA4). Secondary: "Calls from Ad Extensions" (WhatConverts), "Calls from Website" (Google). The hidden UA "Contact Us Page view" goal can't be changed through the API; remove it in the UI. Fixed the typo headline "Greenwood Family Chiroprator" → "Trusted Greenwood Chiropractor". The "Open Evenings" callout is waiting on the practice's hours.
-- 2026-10-19 SS: refreshed Google Ads landing page copy for /chiropractor-in-noblesville/ and /greenwood-chiropractor/, in `landing-pages/` (CMS HTML, not yet published). Ads, callouts and negatives updated the same day (see logs/changes/2026-10-19_1719Z_SS_pp5449-negatives-callouts-rsas.md).
+- 2026-10-19 SS: refreshed Google Ads landing page copy for /chiropractor-in-noblesville/ and /greenwood-chiropractor/, in `landing-pages/` (CMS HTML). SS updated the live landing pages herself on 2026-10-19, so the live pages may differ from these drafts. Ads, callouts and negatives updated the same day (see logs/changes/2026-10-19_1719Z_SS_pp5449-negatives-callouts-rsas.md).

@@ -66,6 +66,7 @@ The shared workspace for Vortala's PPC team: Google Ads and Meta reporting, acco
 
 ## Tracking and compliance (defaults until the team sets a policy)
 - Confirm with the requester which conversion actions to track before building them.
+- **Calls:** most accounts import calls from WhatConverts (click and call imports), and Google's own call conversion actions are removed there to avoid double counting. Some accounts don't use WhatConverts for calls, so check the client's notes and the account's conversion actions before adding or removing any call tracking.
 - Most clients are healthcare practices. Until a HIPAA / patient-data policy is set, don't send health conditions, treatment details or patient identifiers to ad platforms (in pixel events, URLs, custom parameters or audiences), and flag any existing setup that does.
 - Flag where consent rules likely apply (e.g. Canada, Europe, Australia's privacy rules) and say what's required. Claude won't build tracking designed to avoid a legal consent requirement.
 - Don't store patient-identifying information in this repo.

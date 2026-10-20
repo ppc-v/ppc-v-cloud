@@ -9,7 +9,7 @@
 - **Salesforce:** $1,500/month Google budget, billing day 8.
 
 ## Setup (as of 2026-10-20)
-- New account: one Search campaign, "Perfect Patients" (24182598704), started 2026-08-26. Maximize Conversions (no target), $60/day, **Search Partners on**, Display off.
+- New account: one Search campaign, "Perfect Patients" (24182598704), started 2026-08-26. Maximize Conversions (no target), $40/day (from 2026-10-20; $71/day pre-approved for November), **Search Partners on**, Display off.
 - Location: presence only, layered radii 1/2/4/6/8 mi around 139 Maple Row Blvd, Hendersonville TN 37075 (4 mi has +15%, which Maximize Conversions ignores). Mobile +15%.
 - Ad schedule: Mon & Wed 8–18, Tue & Fri 8–15, Thu 10–18 (no weekends).
 - Ad groups: Chiropractor (broad/phrase/exact "chiropractor", "back pain chiropractor"), Chiropractor Hendersonville (broad/phrase/exact), Chiropractor Near (broad/phrase/exact "chiropractor near me").
@@ -24,4 +24,5 @@
 
 ## History and decisions
 - 2026-10-20 SS: performance review, no changes made. Findings: about two thirds of visible search-term spend (about $1,175 of $1,764 since late July) went to searches for other providers' names (TOA, AOS, Integrity Pain, Brentwood Bone & Joint, other chiropractors and pain clinics), and those searches produced most of the recorded conversions, so Maximize Conversions is learning from them. WhatConverts: 26 paid calls since launch, 18 unanswered and under 30 seconds, about 2 new-patient calls. Search Partners $121, 0 conversions. 36% of searches lost to budget (last 30 days). October will hit the $1,500 cap around 26–27 Oct at the current pace. GBP calls in WhatConverts stopped after September (138 in Sep, 0 in Oct).
+- 2026-10-20 SS: daily budget $60 → $40 so October's $1,500 lasts to Oct 30 (MTD was $1,161.30). Sara pre-approved $71/day for November; check-in set for 2026-11-01 (trigger trig_01EDxYKyaaNdXar9hBKFLXxW). See `logs/changes/2026-10-20_1436Z_SS_pp6773-daily-budget.md`.
 - 2026-10-20 SS: applied the review fixes. Call actions now count one per click; Current Patient appointment is secondary; 30s minimum for WhatConverts call imports (Sara, in the WhatConverts UI). 50 competitor negatives added to the Competitor list and 54 to Search Queries (Sara had already added many to Search Queries that morning). Broad "chiropractor hendersonville" and "chiropractor near me" paused. Search Partners off. New RSAs 828708489758 / 828708489761 / 828708489764 with the old ones kept live for comparison. See `logs/changes/2026-10-20_1423Z_SS_pp6773-review-fixes.md`. Check results around 2026-11-03; consider pausing the old RSAs then.

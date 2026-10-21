@@ -1,0 +1,73 @@
+Owner,Account,Ads status,Timezone,Calls,First-time callers,Answered %,Missed / voicemail,New-patient calls,…via phone menu,…via AI,Booked (all callers),Booked: new patients,"New patients enquired, not booked",New patients missed / voicemail,"…of those, never got through (7 days)",New-patient booking rate,Existing appt changes,Other / admin,Not scored by AI,"Booking rate, answered appt calls",Median length (s),GCLID %
+,TOTAL,,,1336,926,73%,452,879,837,299,276,202,135,384,359,28%,169,100,180,63%,71,33%
+Sara,PP6773-Mind and Spine Chiropractic,Active book: Active,America/Chicago,151,133,21%,122,127,125,5,11,4,1,120,119,3%,15,1,1,92%,60,1%
+John,PP4906 - Back & Body Wellness Centre,Active book: Active,America/Vancouver,73,49,88%,15,60,59,29,29,23,11,14,13,48%,4,6,8,73%,116,33%
+Sara,PP5117-Whale Family Chiropractic,Active book: Active,America/Toronto,67,43,88%,8,22,22,0,0,0,0,5,5,0%,0,0,59,,70,1%
+John,PP6066 - Morley Chiropractic,Active book: Active,Australia/Perth,50,18,86%,15,23,23,6,12,8,0,10,7,44%,13,1,9,100%,51,30%
+,PP6645 - Optimal Align Chiropractic,Not in our MCC,,44,23,84%,16,16,15,6,2,1,2,10,9,8%,10,1,12,40%,56,0%
+John,PP4773 - Restoring Life Chiropractic,Active book: Active,America/Chicago,41,13,88%,6,17,17,8,7,2,6,5,5,15%,15,7,0,54%,113,37%
+Sara,PP6724-Lakeside Align Chiropractic,Active book: Active,America/Vancouver,41,29,76%,12,28,28,9,10,6,3,12,10,29%,5,5,5,71%,102,34%
+Sara,PP5080 - Blockhouse Bay Dental Centre,Active book: Active,Pacific/Auckland,39,31,95%,5,34,34,19,11,9,17,5,4,29%,1,2,3,39%,125,87%
+Sara,PP5006 - Kinross Drive Dental,Active book: Canceled,Australia/Perth,39,30,97%,5,31,31,15,13,12,11,4,3,44%,4,2,3,52%,165,95%
+John,PP4960 - The Tooth Affair,Active book: Active,Australia/Sydney,38,28,100%,6,31,31,11,12,9,9,6,5,38%,4,1,6,57%,113,84%
+Sara,PP6282 - Dentist in Hervey Bay,Active book: Active,Australia/Sydney,34,20,97%,2,6,0,6,5,4,1,0,0,80%,3,5,10,36%,75,62%
+John,PP2122-Adelphia Chiropractic Health Center,Active book: Active,America/New_York,32,25,31%,23,30,30,5,4,3,1,23,21,11%,2,0,2,80%,20,3%
+Sara,PP5999 - Hervey Bay Dental,Active book: Active,Australia/Brisbane,32,17,100%,2,6,0,6,11,5,1,0,0,83%,6,3,2,58%,107,59%
+,PP6306 - Farrar Family Chiropractic,"In MCC, not in active book",America/Chicago,30,15,87%,5,9,9,4,4,2,1,4,4,29%,17,3,0,80%,95,0%
+Sara,PP5449 - Midwest Sport and Spine,Active book: Active,America/New_York,29,25,69%,11,29,29,10,5,5,4,11,11,25%,1,7,1,56%,69,34%
+Sara,PP0315 - Marstellar Family Chiropractic,Active book: Paused,America/New_York,26,16,81%,7,8,0,8,8,5,2,0,0,71%,6,1,2,80%,91,42%
+John,PP6596 - Peak Performance Sport & Spine,Active book: Active,America/New_York,26,14,92%,6,15,14,8,8,5,2,4,3,45%,3,3,4,80%,75,58%
+John,PP5813 - Shenton Park Village Dental,Active book: Active,Australia/Perth,23,20,78%,5,15,15,8,8,5,2,5,5,42%,2,4,1,73%,137,43%
+John,PP5353 - Aurora Dental,Active book: Active,America/Edmonton,23,18,65%,9,22,22,9,5,5,6,9,7,25%,0,2,1,45%,76,0%
+Sara,PP6481 - ChiroPro,Active book: Active,America/Chicago,23,19,87%,6,9,6,6,3,3,2,1,1,50%,3,4,5,60%,78,70%
+Sara,PP4348 - Vision Dental,Active book: Active,Australia/Sydney,21,15,86%,4,15,15,9,7,5,4,3,3,42%,2,2,2,64%,102,38%
+Sara,PP1184 - Fayetteville Family Chiropractic,Active book: Active,America/New_York,21,15,57%,11,16,16,4,0,0,3,11,11,0%,4,3,0,0%,66,33%
+Sara,PP5596 - Align Chiropractic Clinic,Active book: Active,America/Denver,19,18,79%,4,19,19,13,10,10,2,4,4,63%,0,2,1,83%,279,16%
+John,PP3899 -  Lindenwoods Chiropractic,Active book: Active,America/Winnipeg,18,12,83%,4,5,0,5,5,5,0,0,0,100%,4,1,4,100%,61,33%
+Sara,PP6744 - Gavric Chiropractic Clinic,Active book: Active,America/Chicago,18,15,72%,6,8,8,2,4,2,0,4,4,33%,5,1,2,100%,64,11%
+Sara,PP3599-Martindale Chiropractic & Wellness Centre,Active book: Active,America/Toronto,17,14,53%,8,14,14,3,1,1,2,8,7,9%,0,2,4,33%,19,18%
+Sara,PP4094 - Palmetto Smiles of Charleston,Active book: Active,America/Indiana/Vevay,17,15,76%,6,17,17,3,2,2,6,6,6,14%,0,1,2,25%,62,0%
+John,PP0573 - Chaparral Chiropractic Wellness Centre,Active book: Active,America/Edmonton,15,9,73%,6,15,15,5,3,3,3,6,6,25%,2,1,0,50%,79,27%
+John,PP6236 - Pullen Dental,Active book: Active,Australia/Sydney,15,0,100%,0,15,15,0,9,9,0,0,0,100%,3,2,1,100%,122,0%
+Sara,PP6742 - Touch Light Chiropractic,Active book: Active,America/New_York,15,14,47%,12,12,12,2,0,0,1,10,10,0%,1,1,0,0%,13,40%
+Sara,PP5063 - Essential Dental Care,Active book: Active,Australia/Brisbane,15,8,47%,9,11,11,2,2,2,1,8,5,18%,2,0,0,50%,29,87%
+Sara,PP6788 - Resolve Chiropractic and Wellness,Active book: Active,America/Chicago,14,14,64%,5,10,10,4,4,3,1,5,5,33%,3,0,1,80%,100,7%
+Sara,PP1375 - The Chirohealth Clinic,Active book: Active,Etc/GMT,14,11,79%,3,3,0,3,4,3,0,0,0,100%,3,3,1,100%,103,36%
+John,PP1989-Rauch Chiropractic & Rehab,Active book: Active,America/New_York,13,12,23%,11,13,13,3,1,1,1,11,11,8%,0,0,0,50%,16,46%
+John,PP4410 - HM Dental,Active book: Active,Australia/Perth,13,11,69%,5,10,10,4,3,3,2,5,5,30%,1,1,1,60%,91,62%
+Sara,PP5372 - Mason Spine & Injury Center,Active book: Active,America/New_York,13,11,100%,2,13,13,10,6,6,3,2,2,55%,1,1,0,67%,124,54%
+John,PP5416 - St. Leonards Square Dental Care,Active book: Active,Australia/Sydney,12,9,92%,3,7,7,4,8,4,0,2,1,67%,0,1,0,100%,113,50%
+John,PP6414 - McAfee Chiropractic,Active book: Active,America/Chicago,11,6,91%,1,6,6,4,4,2,0,1,1,67%,1,4,0,80%,59,36%
+John,PP5154 - TC Smiles,Active book: Active,Australia/Sydney,11,9,100%,1,10,10,6,3,2,4,1,1,29%,0,0,3,43%,106,100%
+John,PP0519 - Fitchett Chiropractic Center,Active book: Active,America/New_York,11,5,82%,2,10,10,2,1,1,3,2,2,17%,1,2,2,25%,73,45%
+Sara,PP4956 - Lightwood Dental,Active book: Active,Australia/Sydney,11,9,91%,2,10,10,6,7,6,2,2,2,60%,0,0,0,78%,139,55%
+Sara,PP2230-Croydon Sports Injury Clinic Ltd,Active book: Active,Europe/London,10,7,70%,3,9,9,1,0,0,2,3,3,0%,0,0,5,0%,50,50%
+John,PP6293 - Ponsonby Chiropractic,Active book: Active,Pacific/Auckland,10,8,60%,5,10,10,0,0,0,0,5,5,0%,1,1,3,,11,50%
+,PP5676 - 120 Chiropractic,Not in our MCC,,10,1,70%,3,0,0,0,0,0,0,0,0,,6,1,0,,108,0%
+John,PP5470 - Optimal Health Chiropractic,Active book: Active,America/New_York,9,8,100%,2,9,9,4,0,0,4,2,2,0%,0,2,1,0%,104,33%
+Sara,PP6147 - Cheeky Grin Dental Port Stephens,Active book: Active,Australia/Sydney,9,6,89%,2,7,7,3,4,3,1,2,0,50%,1,1,0,80%,84,89%
+John,PP5555-Essential Chiropractic Inc,Active book: Active,America/St_Johns,9,8,22%,8,9,9,2,1,1,0,8,8,11%,0,0,0,100%,9,44%
+,PP5089 - Six Twelve Family Dental,Not in our MCC,,9,5,89%,2,0,0,0,0,0,0,0,0,,1,3,2,0%,100,0%
+John,PP0589 - SpineWerX,Active book: Active,America/Toronto,8,4,63%,5,3,3,0,0,0,0,3,3,0%,2,1,0,,60,13%
+John,PP3906 - Bilan Chiropractic,Active book: Active,America/Anchorage,8,7,63%,3,6,6,0,0,0,0,3,3,0%,0,0,5,,47,0%
+Sara,PP6330 - Life Chiropractic Centre,Active book: Active,Australia/Sydney,8,4,75%,3,5,5,1,2,1,0,3,2,25%,2,1,0,100%,55,38%
+Sara,PP6313 - RiverTowne Family Chiropractic,Active book: Active,America/Chicago,7,5,86%,2,7,7,3,2,2,1,2,2,40%,0,2,0,67%,90,43%
+Sara,PP3678 - Advanced Care Chiropractic and Wellness Center,Active book: Active,America/New_York,7,6,71%,2,3,3,0,1,0,0,2,1,0%,0,1,2,50%,57,14%
+Sara,PP3074 - Doster Chiropractic,Active book: Active,America/New_York,7,6,43%,4,7,7,2,1,1,1,4,4,17%,1,0,0,50%,36,43%
+Sara,PP1864 - Memorial Drive Chiropractic and Massage,Active book: Active,America/Vancouver,7,6,86%,3,3,0,3,4,3,0,0,0,100%,0,0,0,100%,100,29%
+John,PP6304 - Alkimos Beach Dental Centre,Active book: Active,Australia/Perth,7,6,100%,0,6,6,2,1,1,4,0,0,20%,2,0,0,20%,245,100%
+John,PP4745 - Wavescape Orthodontics,Active book: Active,Australia/Sydney,6,4,100%,1,1,1,1,3,1,0,0,0,100%,0,1,0,75%,175,100%
+Sara,PP4637 - Action Chiropractic & Massage Therapy Clinic,Active book: Active,America/Edmonton,4,3,100%,0,4,4,0,0,0,0,0,0,,0,0,4,,54,50%
+Sara,PP6285 - Lifestyle Chiropractic & Wellness,Active book: Active,America/Denver,4,4,50%,2,2,0,2,2,2,0,0,0,100%,0,0,0,100%,106,50%
+Sara,PP4604 - The Joint Chiropractically,Active book: Paused,Australia/Brisbane,4,3,75%,2,2,2,1,0,0,1,1,1,0%,1,0,0,0%,102,0%
+John,PP4784 - Oak Creek Relief & Wellness,"In MCC, not in active book (Paused)",America/Chicago,3,0,67%,1,1,1,0,0,0,0,1,1,0%,2,0,0,,62,0%
+John,PP5405 - Melody Dental Care,Active book: Active,America/Los_Angeles,2,2,0%,2,2,2,0,0,0,0,2,2,0%,0,0,0,,34,0%
+,PP5394 - Achieve Health & Wellness,"In MCC, not in active book (Canceled)",America/Edmonton,2,0,100%,1,0,0,0,1,0,0,0,0,,0,0,0,100%,66,0%
+John,PP0764 - Aria Health and Wellness Clinic,Active book: Active,America/Vancouver,2,1,100%,0,1,0,1,2,1,0,0,0,100%,0,0,0,100%,228,50%
+,PP4073 - Baywest Medical,Not in our MCC,,2,1,100%,0,1,1,1,0,0,1,0,0,0%,1,0,0,0%,130,0%
+,PP4570 - Back to Health Center,Not in our MCC,,2,0,50%,1,1,1,0,0,0,0,1,1,0%,1,0,0,,41,0%
+Sara,PP0117 - Funnell Chiropractic,Active book: Active,Australia/Perth,1,1,0%,1,1,1,0,0,0,0,1,1,0%,0,0,0,,8,100%
+,PP6216 - Dalkeith Chiropractic,"In MCC, closed account",Australia/Perth,1,0,100%,1,0,0,0,0,0,0,0,0,,0,0,0,,88,0%
+,PP6079 - Arlington Dental,"In MCC, closed account",America/Chicago,1,0,100%,0,0,0,0,0,0,0,0,0,,1,0,0,,85,0%
+John,PP5871 - Better Health Chiropractic,Active book: Active,America/New_York,1,1,0%,1,1,1,0,0,0,0,1,1,0%,0,0,0,,9,0%
+John,PP5347 - Community Chiropractic Center,Active book: Active,America/New_York,1,1,0%,1,1,1,0,0,0,0,1,1,0%,0,0,0,,21,0%

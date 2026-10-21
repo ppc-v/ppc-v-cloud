@@ -25,3 +25,4 @@
 - 2026-10-19 SS: added 108 campaign negatives (condition names as exact, wrong providers/meds/competitors as phrase) and changed the radius from 5 to 8 mi (presence only). See `logs/changes/2026-10-19_1153Z_SS_pp5372-negatives-radius.md`. Salesforce budget: $1,500/month (Google), billing day 13.
 - 2026-10-19 SS: daily budget $87 → $55 so October's $1,500 lasts to 29 Oct. Sara pre-approved resetting it on 1 Nov to what November needs. See `logs/changes/2026-10-19_1155Z_SS_pp5372-daily-budget.md`.
 - Business names are limited to 25 characters, so "Mason Spine & Injury Center" doesn't fit. "Mason Spine&Injury Center" is used.
+- 2026-10-21 JW: found during the booking response test that the Contact Us page's office hours table shows only Thursday 9:00–12:00 (looks incomplete). Not fixed; flag to Sara / the client.

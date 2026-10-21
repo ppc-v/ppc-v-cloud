@@ -28,3 +28,4 @@
 - 2026-10-16 SS: `3d neck scan` negative added. New RSA drafts in ad-copy-draft-2026-10.md (not built). Refund for the April hack spend requested from Google, still waiting (SS).
 - Scheduled: 1 Nov budget raise to JC $70 / Osage $50 (trig_01KBhUadhWzNJN28jduxQtNC); 5 Nov Jefferson City check (trig_01UAez1CH8Zb5FmzY4SGL8Eo).
 - 2026-10-16 SS: 6 new RSAs live (one per enabled ad group); decompression machine/device negatives removed (clinic offers spinal decompression). Site issues flagged to SS: Osage Beach page still says new space is being finished; its title tag says "Chiropractor Jefferson City".
+- 2026-10-21 JW: found during the booking response test that the Osage Beach contact page (/contact-osage-beach/) shows "Call Today: (000) 000-0000". Not fixed; flag to Sara / the client.

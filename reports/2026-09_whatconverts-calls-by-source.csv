@@ -1,8 +1,6 @@
 Source,Calls,First-time callers,Answered %,Missed / voicemail,New-patient calls,…via phone menu,…via AI,Booked (all callers),Booked: new patients,"New patients enquired, not booked",New patients missed / voicemail,"…of those, never got through (7 days)",New-patient booking rate,Existing appt changes,Other / admin,Not scored by AI,"Booking rate, answered appt calls",Median length (s),GCLID %
-Google Ads,849,595,78%,269,582,548,237,188,149,111,218,199,31%,102,71,91,59%,83,51%
-GBP number tagged paid,487,331,66%,183,297,289,62,88,53,24,166,160,22%,67,29,89,74%,65,2%
-Google Ads + GBP paid-tagged (combined),1336,926,73%,452,879,837,299,276,202,135,384,359,28%,169,100,180,63%,71,33%
-Google Business Profile,5481,2007,86%,1539,1600,1527,437,1178,346,181,641,566,30%,1342,498,563,77%,75,0%
+Google Ads,874,607,78%,273,592,555,242,193,154,112,219,199,32%,111,75,93,60%,83,51%
+Google Business Profile,5943,2326,84%,1718,1887,1809,494,1261,394,204,806,726,28%,1400,523,650,76%,74,0%
 Organic search,1073,483,90%,277,370,358,137,246,99,51,105,84,39%,219,152,105,77%,90,0%
 Direct / offline / legacy,1023,432,80%,313,381,365,134,194,76,44,149,126,28%,255,120,81,76%,83,1%
 Referral,199,70,83%,64,108,108,27,43,25,9,36,21,36%,31,26,25,81%,86,1%

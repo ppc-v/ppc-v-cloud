@@ -13,6 +13,7 @@
 
 ## Tracking
 - Primary: Calls From Ad Extensions (WhatConverts call import), Calls From Google Ads (WhatConverts click import), both count every call. Also primary: Appointment Request (New Patient) and Contact Us Submission (GA4 imports), silent since July. Appointment Request (Current Patient) is secondary.
+- Site also has an **Aloha webchat (ReviewWave)** widget, added by the client (`cdn.reviewwave.com/js/chat_embed.js`, key 4b30f1fe76e484): visitors leave name, phone and message and get a text back. Not tracked anywhere today. It runs on the page (not an iframe) and shows `#rws-message-sent-view` after a successful send, so GTM can catch it once we have access. Send only the event, never the form fields.
 - About half the ad calls are existing patients. The practice seems to use an AI receptionist that books on the call.
 - The client may move to a third-party booking engine; options are in `reports/2026-10-21_pp6744-lifetime-review.md`.
 

@@ -14,7 +14,7 @@
 - Offers: $189 new patient special; Dental Wellness Plan $348/year (page /dental-wellness-plan/), not yet advertised.
 
 ## Tracking
-- Primary: Calls from Ad Extensions (WhatConverts call import) and Calls from Google Ads (WhatConverts click import), both counting every call; GA4 imports Appointment Request (New Patient), Appointment Request (Current Patient), Online Appointment Request Submission, Contact Us Submission.
+- Primary: Calls from Ad Extensions (WhatConverts call import) and Calls from Google Ads (WhatConverts click import), both counting one per click since 2026-10-22; GA4 imports Appointment Request (New Patient), Online Appointment Request Submission, Contact Us Submission. Appointment Request (Current Patient) is secondary since 2026-10-22.
 - Site has an opt-in cookie banner: GA4 loads only after "Accept", so GA4 form conversions undercount. Calls unaffected.
 - Before the breach Google's own "Calls From Ads" action was also primary, double counting calls (now gone).
 

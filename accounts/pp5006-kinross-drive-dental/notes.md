@@ -16,7 +16,7 @@
 - Two active ad sets with identical targeting (10 mi radius around 59 Kinross Dr, age 20-65+, Advantage+ audience, Advantage+ placements, instant forms, 1-day click):
   - `Doc/Emergency Ads - Lead Gen`: "meet the dentist" ads, form 4210232982583203.
   - `Gap Free NPS - Lead Gen`: gap-free new patient offer, form 896201482847065. Learning Limited. **Paused 2026-10-22; its ads now run in Doc/Emergency.**
-- Paused: Mouthguard Promo, Father's Day Whitening Offer, Gap Free/Use It Or Lose It (Nov 2025: AUD 300, 4 leads, CPL AUD 75).
+- Archived 2026-10-22: Mouthguard Promo, Father's Day Whitening Offer, Gap Free/Use It Or Lose It (Nov 2025: AUD 300, 4 leads, CPL AUD 75), Gap Free NPS.
 
 ## Creative
 - The client supplies the doctor photos. The house style is a navy background, logo top left, white dot grid, framed photo on the right, and kddental.com.au bottom right.
@@ -32,3 +32,4 @@
 - 2026-10-22 SS: approved all review recommendations. Applied: Doc/Emergency placements set to FB feed + stories + reels only (log `2026-10-22_2048Z_SS_pp5006-placements.md`). Still to do (needs Page access or a person in Ads Manager): merge the Gap Free ads into Doc/Emergency and pause Gap Free NPS, publish the new creatives, switch the lead forms to Higher intent and add a private health cover question. Then confirm with the client that Meta should keep running while Google is canceled.
 - 2026-10-22 SS: merged Gap Free ads 2 and 4 into Doc/Emergency and paused the Gap Free NPS ad set (log `2026-10-22_2055Z_SS_pp5006-merge-adsets.md`). The new creative images are in the ad account's image library, but no ads use them yet.
 - 2026-10-22 ~21:15 UTC: the authentication block (3858385) has cleared. All Doc/Emergency doctor and emergency ads now show the HARD_ERROR "Missing lead form" (3390001), although their creatives point to form 4210232982583203. Fix in Ads Manager: re-select the instant form on each ad and publish. The Gap Free 2 and 4 ads are unaffected.
+- 2026-10-22 21:30 UTC SS: fixed the missing lead form on the live ads in Ads Manager (all clear now). Archived the paused ad sets (Father's Day, Mouthguard, Use It Or Lose It, Gap Free NPS) and the old holiday/general ads. Kept Dr Jieun Kim and Dr Anvitha (paused) for future use; re-select the form before switching them on. Log `2026-10-22_2130Z_SS_pp5006-archive-cleanup.md`.

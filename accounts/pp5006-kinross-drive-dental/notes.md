@@ -2,7 +2,7 @@
 
 - **Google Ads ID:** (Google side labelled Canceled in the inventory)
 - **Meta ad account ID:** act_161921765664666 (AUD, Australia/Perth, brand: Smile Marketing)
-- **Facebook Page:** 801344560257145 (the Claude system user has no Page access, so lead forms can't be read via API)
+- **Facebook Page:** 801344560257145. The Claude system user has no access to this Page, so it can't create ads or read/edit lead forms via the API. Edits to existing ad sets do work.
 - **WhatConverts profile:**
 - **GTM container / GA4 property:**
 - **Access:** normal
@@ -18,9 +18,14 @@
   - `Gap Free NPS - Lead Gen`: gap-free new patient offer, form 896201482847065. Learning Limited.
 - Paused: Mouthguard Promo, Father's Day Whitening Offer, Gap Free/Use It Or Lose It (Nov 2025: AUD 300, 4 leads, CPL AUD 75).
 
+## Creative
+- The client supplies the doctor photos. The house style is a navy background, logo top left, white dot grid, framed photo on the right, and kddental.com.au bottom right.
+- 2026-10-22: drafted gap free + doctor creatives (1:1 and 9:16) in `creative/2026-10-gap-free-doctors/`. SS is fine with offer creative that resembles the doctor ads.
+
 ## Tracking
 - Leads are Meta instant forms (on-Facebook), so the pixel isn't used for leads ("Pixel never fired" in the inventory is expected).
 
 ## History and decisions
 - 2026-10-22 SS: asked for recommendations to get more leads on the limited budget. Review: `reports/2026-10-22_pp5006-meta-review.md`.
 - 2026-10-22: every ad in Doc/Emergency shows "Update required", error 3858385 ("Please authenticate your account"). Ads keep running, but nothing can be created or edited until someone authenticates in Ads Manager.
+- 2026-10-22 SS: approved all review recommendations. Applied: Doc/Emergency placements set to FB feed + stories + reels only (log `2026-10-22_2048Z_SS_pp5006-placements.md`). Still to do (needs Page access or a person in Ads Manager): merge the Gap Free ads into Doc/Emergency and pause Gap Free NPS, publish the new creatives, switch the lead forms to Higher intent and add a private health cover question. Then confirm with the client that Meta should keep running while Google is canceled.

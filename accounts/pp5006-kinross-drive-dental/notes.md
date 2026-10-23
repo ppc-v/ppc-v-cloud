@@ -10,6 +10,7 @@
 
 ## Goals and preferences
 - Leads on a limited budget (AUD 23/day campaign budget, about AUD 700/month).
+- **The client wants ads running for every dentist** (SS, 2026-10-23). Don't pause a doctor's only ad for performance reasons; keep at least one live ad per doctor.
 
 ## Setup (as of 2026-10-22)
 - One campaign, `PP5006 - Lead Gen` (Leads objective, Advantage campaign budget AUD 23/day, lowest cost).

@@ -25,3 +25,5 @@
 - 2026-10-16 SS: tried to switch Pediatric AdSet goal from the broken "Appt Requests" to "Appt Form Submission"; Meta blocks goal edits on published ad sets (see logs/changes).
 - 2026-10-16 SS: created "Pediatric AdSet - Form Fills" (120252912927790220, paused, goal Appt Form Submission). Ad creation failed: system user lacks advertiser access to the Page 291780357563991. Old Pediatric AdSet still active.
 - 2026-10-16 SS: SS added the ad in Ads Manager; new Pediatric AdSet - Form Fills switched on, old Pediatric AdSet paused.
+- 2026-10-16 SS: turned off automatic advanced matching on the pixel.
+- 2026-10-23 SS: no new-patient form fills since Oct 12 test; removed Audience Network from both lead ad sets. **Revisit 2026-11-01:** if still no form fills, rebuild with landing page views goal or a single combined ad set (client email already offered going back to website visits).

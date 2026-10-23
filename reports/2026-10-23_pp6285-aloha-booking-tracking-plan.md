@@ -7,19 +7,20 @@ Requested by SS, 2026-10-23. This is a read-only plan: nothing was changed.
 - The widget fires a browser event, **`RWEmbedJS.appt_scheduled`**, and sets `window._rw_sched_config.schedule_status` to `"scheduled"` or `"error"`. It only does this if the page has already defined `window._rw_sched_config`. Our GTM tag will define it.
 - The "existing patient" portal (theschedulingapp.com/LifestyleChiropracticandWellness, linked from /contact-us/) is a separate site, and those bookings are current patients. We leave it out.
 - GTM container **GTM-TMMG5BN8** is on the site but not shared with paidsearch@. Also on the site: GA4 G-6SMSLQ3FYK, the Google Ads tag AW-16627031643 and WhatConverts 128417.
-- **Neither the ad landing page (/chiropractor-mendota-heights/) nor the homepage links to /book-online/.** Ad visitors can't reach the booking form from the page the ad sends them to, so tracking alone won't produce booking conversions until a "Book Online" button is added.
+- The ad landing page (/chiropractor-mendota-heights/) has three "BOOK AN APPOINTMENT »" buttons that go to /book-online/ (cta37, cta2, cta7). The header "BOOK AN APPOINTMENT" button goes to /contact-us/ instead. Pointing it at /book-online/ is optional, and it's a site-wide header. (Corrected 2026-10-23: an earlier version of this plan said the landing page didn't link to /book-online/, which was wrong.)
+- The page also contains a hidden Vortala "request appointment" form (`#request_appointment-container`), which isn't tracked. Check in GTM whether anything opens it.
 - The current primary goal "Book Online Page View" counts a page view, not a booking.
 
 ## Step by step
 
 ### 1. Get access (send the client message below)
-- GTM-TMMG5BN8: add `paidsearch@vortala.com` with **Publish** permission. The site is a Vortala childsite, so first check internally (web team) whether Vortala already owns this GTM account. If it does, no client email is needed for this.
+- GTM-TMMG5BN8: Vortala owns it (Sara confirmed 2026-10-23), and Sara is getting access for paidsearch@ internally. The client doesn't need to do anything for GTM.
 - Aloha / ReviewWave: a user login, or a staff member who can check the appointment list, so we can confirm test bookings and cancel them.
 - Optional: GA4 G-6SMSLQ3FYK with Editor access for paidsearch@, so we can mark a GA4 key event.
 - The client's OK to make 1–2 test bookings, which we cancel straight away.
 
-### 2. Website change (Vortala web team)
-- Add a "Book Online" / "Schedule Your $99 Visit" button on /chiropractor-mendota-heights/ linking to /book-online/. Optionally add the same button to the main nav.
+### 2. Website (optional)
+- Nothing needs to change, because the landing page buttons already go to /book-online/. Optionally, point the header "BOOK AN APPOINTMENT" button (currently /contact-us/) at /book-online/.
 
 ### 3. Build in GTM (in a workspace; publishing is a separate approval)
 1. **Custom HTML tag "Aloha – booking listener"**, firing on the Initialization trigger for Page Path contains `/book-online` (or on all pages, if the widget gets added elsewhere later):
@@ -73,8 +74,6 @@ Requested by SS, 2026-10-23. This is a read-only plan: nothing was changed.
 > 2. **Google Analytics (optional):** add **paidsearch@vortala.com** as an **Editor** on your Google Analytics property. In Analytics: Admin → Property access management → +.
 > 3. **Test bookings:** we'll make one or two test appointments through the online scheduler, marked "TEST – Vortala, please cancel", to make sure the tracking works. Is that OK? We'll let you know when they're in, so your team can cancel them in Aloha (or tell us if you'd rather we cancel them).
 > 4. **A quick question:** do you want online bookings to be the main goal we optimise your ads for, alongside phone calls?
->
-> We'll also add a "Book Online" button to your ad landing page so visitors from the ads can book straight away.
 >
 > Thanks!
 > Sara

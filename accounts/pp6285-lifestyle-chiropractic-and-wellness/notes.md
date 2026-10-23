@@ -3,7 +3,7 @@
 - **Google Ads ID:** 889-106-4862 (America/Denver, USD). Brand label: Perfect Patients
 - **Meta ad account ID:** none in the inventory
 - **WhatConverts profile:** 128417 (account 85838). Tracking numbers seen on google/cpc calls: +1 651-448-2853 (with GCLID), +1 651-448-2894 (the call asset, no GCLID), +1 651-448-2907 (no GCLID).
-- **GTM container / GA4 property:** GTM-TMMG5BN8 on the site, not shared with paidsearch@. GA4 G-6SMSLQ3FYK, Google Ads tag AW-16627031643, Meta pixel 2530064823884699 on the landing page.
+- **GTM container / GA4 property:** GTM-TMMG5BN8 on the site. Vortala owns it, but it isn't shared with paidsearch@ yet; Sara is getting access (2026-10-23). GA4 G-6SMSLQ3FYK, Google Ads tag AW-16627031643, Meta pixel 2530064823884699 on the landing page.
 - **Access:** normal
 - **Usually worked on by:** Sara (Google label)
 - **Salesforce:** $2,500/month Google budget, billing day 4.
@@ -22,7 +22,7 @@
 - Calls from ads and Calls from Ad Extensions both recorded the same calls on 2 and 5 Oct 2026 (double counting).
 - Call asset (651) 448-2894 has call conversion reporting disabled. Most paid calls arrive without a GCLID.
 - No form or booking confirmation is tracked as a lead.
-- Online booking is the **Aloha (ReviewWave) New Patient Scheduler** on /book-online/ (embed 23362a1b…). It's built into the page, not an iframe, and fires `RWEmbedJS.appt_scheduled` when `window._rw_sched_config` is defined. The ad landing page and the homepage don't link to /book-online/. Existing patients book at theschedulingapp.com (don't track it). Plan and client access request: `reports/2026-10-23_pp6285-aloha-booking-tracking-plan.md` (2026-10-23 SS, not built yet).
+- Online booking is the **Aloha (ReviewWave) New Patient Scheduler** on /book-online/ (embed 23362a1b…). It's built into the page, not an iframe, and fires `RWEmbedJS.appt_scheduled` when `window._rw_sched_config` is defined. The landing page's three "BOOK AN APPOINTMENT »" buttons go to /book-online/. The header button goes to /contact-us/. Existing patients book at theschedulingapp.com (don't track it). Plan and client access request: `reports/2026-10-23_pp6285-aloha-booking-tracking-plan.md` (2026-10-23 SS, not built yet).
 
 ## History and decisions
 - 2026-04: the account was compromised. Five campaigns (DR-JR-SHA, DR-JR-Murong, DR-JR-VAN, DR-E300-ADAM-LD-Meme, DR-E300-ADAM-LD-Meme #2) ran Indonesian gambling ads and fake Mexican passport ads and spent about $2,660 in April. They are now removed, though their ad groups and ads remain under the removed campaigns. This is the same pattern and month as PP5372. No record here of how it was handled (credit, access review).

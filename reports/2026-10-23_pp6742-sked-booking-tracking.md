@@ -4,7 +4,8 @@ Requested by SS, 2026-10-23. Goal: count **completed** new-patient bookings made
 
 ## How it works (background for Sara)
 
-- The SKED scheduler is embedded as an iframe on https://www.touchlightchiro.com/book-now/ (`portal.sked.life/new-patient?key=…`). GTM-MBGVZFCG runs on the parent page.
+- The SKED scheduler is embedded as an iframe on https://www.touchlightchiro.com/book-now/ (`portal.sked.life/new-patient?key=…`). GTM-MBGVZFCG runs on the parent page. All the CTAs on the ad landing page (/huntersville-chiropractor/) go to /book-now/.
+- **Vortala manages the website** (SS, 23 Oct): /book-now/, the landing page and any CTA changes are ours. The client only controls SKED itself.
 - I read SKED's portal code (23 Oct 2026). When a booking saves, the scheduler sends a message to the page it's embedded in: `parent.postMessage('{"actionType":"confirm", …}', "*")`. **SKED already does this. The client doesn't need to switch anything on.** A small GTM listener on the website can catch that message and fire the conversion.
 - The message also contains the patient's **name, email, phone and appointment time**. Our listener must throw these away and pass on only "a booking happened". No patient details go to Google (CLAUDE.md healthcare rule). Don't turn on enhanced conversions for this action.
 - SKED's "redirect after booking" setting only works when the scheduler is opened as a full page, **not when it's embedded**. In the code, if a redirect URL is set and the scheduler is embedded, the page stays on a loading spinner after booking (the booking still saves). So we want that setting blank. One patient's voicemail said online booking for the $199 special "failed", which could be this. Not confirmed.
@@ -24,7 +25,7 @@ Requested by SS, 2026-10-23. Goal: count **completed** new-patient bookings made
 >
 > 2. **Allow one test booking.** Once tracking is set up, we'll make one test appointment through the website. It'll be named **"TEST Vortala – please delete"**, at a time you choose (ideally a slot you don't expect to fill). Please let us know a good day and time, and delete the appointment afterwards. While you're at it, it's worth making a test booking yourselves on your phone. One caller recently told us online booking for the $199 special didn't work for them.
 >
-> 3. **Let us know before changing the Book Now page.** Please keep the SKED scheduler on the Book Now page as it is now. If you or your web provider plan to move it, replace it, or link to SKED directly from elsewhere on the site, give us a heads-up so tracking keeps working.
+> 3. **Let us know if your SKED online booking changes.** We look after the Book Now page on your website, so you don't need to change anything there. But if your SKED new-patient booking link changes, online booking is switched off, or you move to different scheduling software, please tell us first so tracking (and the Book Now page) keeps working.
 >
 > One quick question: do returning patients ever book through the same Book Now page, or only new patients?
 >
@@ -46,6 +47,13 @@ Requested by SS, 2026-10-23. Goal: count **completed** new-patient bookings made
 - [ ] The client has confirmed SKED's redirect URL is blank.
 - [ ] Decide the conversion **value**: none, or a fixed value (e.g. 199 for the new-patient special). Tell me which.
 - [ ] Check in GTM whether a **Conversion Linker** tag fires on All Pages and whether a Google Ads tag (AW-…) already exists. The page HTML has no AW- tag, so anything there is inside GTM.
+
+### 1b. Website (ours to manage): no page change needed
+The tracking runs entirely in GTM, so /book-now/ stays as it is. Going forward:
+- **Keep the SKED scheduler embedded** on /book-now/ (`<iframe id="sked-portal" src="https://portal.sked.life/new-patient?key=…">`, existing `sandbox` attribute included). Don't replace it with a button or link that opens sked.life in a new tab or a pop-up. The booking signal only reaches a page the scheduler is embedded in, so a booking made on sked.life itself wouldn't be tracked.
+- **All booking CTAs go to /book-now/**, never straight to sked.life. That's true now: all 6 booking links on /huntersville-chiropractor/ point to /book-now/. Do the same on any new landing pages or ad variants.
+- **After any edit to /book-now/**, open it on a phone and check the scheduler loads and scrolls properly.
+- **Plan B, only if the test in step 4 doesn't pick up the booking:** since we own the site, we could create a thank-you page (e.g. /booking-confirmed/, noindex), link CTAs to the full-page SKED scheduler, and ask the client to set that page as SKED's redirect URL. We'd then track the thank-you page. It's worse for patients (they leave the site to book) and needs a client change in SKED, so it's a fallback only.
 
 ### 2. Create the Google Ads conversion action (288-398-9795)
 Goals → Conversions → Summary → **+ New conversion action** → Website → enter touchlightchiro.com → **Add a conversion action manually**:

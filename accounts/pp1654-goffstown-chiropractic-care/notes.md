@@ -28,3 +28,4 @@
 - 2026-10-16 SS: turned off automatic advanced matching on the pixel.
 - 2026-10-23 SS: no new-patient form fills since Oct 12 test; removed Audience Network from both lead ad sets. **Revisit 2026-11-01:** if still no form fills, rebuild with landing page views goal or a single combined ad set (client email already offered going back to website visits).
 - 2026-10-23 SS: client call planned for the 2nd week of November; likely switch of focus to **active adults with back and neck pain**, which will need new ads/creative (confirm sizes and formats with SS).
+- 2026-10-23 SS: drafted active-adults ad concepts for client review (back & neck care, stay in the game, dry needling; 1:1 creative, landing on matching service pages): https://claude.ai/artifact/VaZy3o7FvXeGJpVj1xF7nu

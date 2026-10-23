@@ -10,7 +10,7 @@
 - Location: Celina, TX area. 5 proximity radii (1–8 mi). Timezone America/Chicago, USD.
 
 ## Goals and preferences
-- Offer: $37 New Patient Special. Offers shockwave; no SoftWave or laser. No Spanish-speaking service, so Spanish searches are blocked (SS, 2026-10-16). Same-day and walk-in appointments, insurance accepted.
+- Offer: $37 New Patient Special. Offers shockwave; no SoftWave or laser. No Spanish-speaking service, so Spanish searches are blocked (SS, 2026-10-16). Accepts Medicare. No StemWave (SS, 2026-10-23). Same-day and walk-in appointments, insurance accepted.
 - Reporting: the 30-day review is internal. Sara writes the DMS update herself. No client email drafts needed.
 
 ## Tracking
@@ -27,3 +27,4 @@
 - 2026-10-16 SS: 16 Spanish-language phrase negatives added to the Search Queries list.
 - 2026-10-16 SS: WhatConverts call import limited to 30s+ calls. Conversion counts from this date aren't comparable to the first 30 days.
 - 2026-10-23 one-week check (19–22 Oct): $359, 5 conversions ($72 CPL, now counting 30s+ calls only), impression share 47% (was 39%), budget-lost share down to 11% (was 30%). The 7s call wasn't imported, so the 30s filter looks to be working. 32 new negatives proposed (not applied).
+- 2026-10-23 SS: 34 negatives added (22 competitor, 12 other incl. stemwave).

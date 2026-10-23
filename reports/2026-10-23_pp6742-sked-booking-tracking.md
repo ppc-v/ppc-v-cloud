@@ -157,3 +157,36 @@ Thank you!
 
 Thanks,
 Sara
+
+---
+
+## D. Phase 2: track show-ups and started care in Google Ads (SS wants this, 23 Oct)
+
+Goal: tell Google Ads which ad bookings actually **showed** and which **started care**, so it can be measured on real new patients rather than bookings.
+
+### The problem to solve
+Google Ads can only credit a later outcome to an ad click if each booking has an ID that we can find again later. SKED doesn't store a Google click ID with the appointment (its booking link only carries `key` / `from`), and WhatConverts can't see inside a third-party iframe without its script inside SKED's page, which we can't add.
+
+### Recommended method: opaque booking ID + conversion adjustments
+1. **At booking (phase 1 tag, small addition):** the GTM listener builds a booking ID from the **appointment date and time** in SKED's message, hashed with a secret salt (SHA-256). The ID goes to Google Ads as the conversion's `transaction_id`. Google gets an unreadable string, not the time or any patient details.
+2. **Weekly, from the client:** a list of the **appointment dates and times** of online new-patient bookings that showed, and of those that started care. Times only, no names.
+3. **Our side:** hash those times the same way to find the matching booking IDs, then upload **conversion adjustments** to Google Ads:
+   - no-show → **retract** the booking conversion, so it only counts bookings that showed; or
+   - **restate the value**, e.g. booked 0 → showed 1 → started care 10 (values to agree).
+   No new conversion data or identifiers go to Google, just adjustments to the bookings it already has, keyed by the opaque ID.
+4. Google only accepts adjustments within a limited window after the conversion (about 55 days; confirm before building), so the weekly cadence matters.
+
+Why this one: no patient names, phones or emails leave the site, no new tool or server, and it builds on the phase 1 tag. Put the booking ID in the tag **from day one**, so bookings made before the policy is signed off can still be adjusted later, within the window.
+
+Alternative (not recommended for now): send each booking into WhatConverts as a lead with the click ID (needs a small server relay holding the WhatConverts API key), have the front desk mark show / started care in WhatConverts, and let WhatConverts import those to Google Ads. It's a smoother daily workflow, but patient names and contact details pass through more systems. WhatConverts says it signs BAAs (https://www.whatconverts.com/security/whatconverts-and-hipaa/), but the relay would need one too.
+
+### Gate: needs a policy decision before anything is uploaded
+CLAUDE.md: until the team sets a HIPAA / patient-data policy, nothing about patients goes to ad platforms. Telling Google "this ad click became a patient" is patient-related information even without names, and Google doesn't sign BAAs for Google Ads. Before phase 2 uploads start:
+- [ ] Vortala sign-off on a policy covering this (Jacob as CEO, ideally with legal advice).
+- [ ] The client's written OK (they're the HIPAA covered entity), and confirmation that a BAA between Vortala and the practice covers us receiving appointment times.
+- [ ] The website privacy policy mentions ad conversion measurement (we manage the site).
+
+Building the phase 1 booking tag, with the opaque ID, can go ahead now. It sends no patient data.
+
+### Extra ask for the client (add once the policy is signed off)
+> Each week (e.g. every Monday), please send us the appointment date and time of each online new-patient booking from the previous week, marked showed / no-show, and whether they started care. Times only, please, no names. We use this to see which of our ads bring in patients who actually come in.

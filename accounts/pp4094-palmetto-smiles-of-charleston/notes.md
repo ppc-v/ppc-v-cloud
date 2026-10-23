@@ -3,7 +3,7 @@
 - **Google Ads ID:** 505-760-9128 (US Eastern, USD). Brand label: Smile Marketing
 - **Meta ad account ID:** 320969308719059 (paused by Sara 4 Aug 2026; Salesforce Meta budget $900)
 - **WhatConverts profile:** 125372 (account 83256). (843) 256-3614 = Google Ads call asset (since Aug 2026); (843) 256-3615 "Google My Business Ads" = Business Profile number, also used in Maps ads (was the main ad-call number before the breach); 256-3026 / 256-3031 / 256-2996 = website number pool.
-- **GTM container / GA4 property:** GTM-P4VKDWZ ("added by SEO"), not shared with paidsearch@. No GA4 property visible.
+- **GTM container / GA4 property:** GTM-P4VKDWZ ("added by SEO"), not shared with paidsearch@. No GA4 property visible. Access requested from the SEO team (Sara, by 2026-10-23); waiting.
 - **Website:** www.palmettosmilesofcharleston.com, 3188 W Montague Ave, North Charleston SC. Hours: Mon & Wed 7:30–4:30, Tue & Thu 7:30–2:30, Fri by appointment. Contact: Amy.
 - **Salesforce:** $2,500/month Google budget, billing day 24.
 - **Access:** normal

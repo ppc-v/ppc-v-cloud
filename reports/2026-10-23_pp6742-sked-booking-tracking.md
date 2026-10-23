@@ -18,15 +18,13 @@ Requested by SS, 2026-10-23. Goal: count **completed** new-patient bookings made
 >
 > Hi Dr. Gross and team,
 >
-> At the moment we can see when someone from your Google Ads opens your Book Now page, but not whether they actually finish booking an appointment in SKED. We'd like to fix that, so the ads are judged on real new-patient bookings rather than page visits. Most of the work is on our side. We need four things from you:
+> At the moment we can see when someone from your Google Ads opens your Book Now page, but not whether they actually finish booking an appointment in SKED. We'd like to fix that, so the ads are judged on real new-patient bookings rather than page visits. Most of the work is on our side. We need three things from you:
 >
-> 1. **Google Tag Manager access.** Please add **paidsearch@vortala.com** as a user on the Google Tag Manager account for touchlightchiro.com (container GTM-MBGVZFCG), with **Publish** permission. If your web provider manages this for you, please forward this request to them. (In Tag Manager: Admin → User Management → + → Add users → enter the email → set the container to Publish → Invite.) If you also have a Google Analytics account for the website, please add the same email as an **Editor** there (Admin → Property access management → +).
+> 1. **Check one SKED setting.** In your SKED online scheduling (new patient portal) settings, if there's a **"redirect URL" or "thank-you page"** after booking, please leave it **blank** or tell us what it's set to. Your scheduler is built into your website's Book Now page, and a redirect can stop patients seeing the confirmation screen. If you're not sure where this is, SKED support can check it for you.
 >
-> 2. **Check one SKED setting.** In your SKED online scheduling (new patient portal) settings, if there's a **"redirect URL" or "thank-you page"** after booking, please leave it **blank** or tell us what it's set to. Your scheduler is built into your website's Book Now page, and a redirect can stop patients seeing the confirmation screen. If you're not sure where this is, SKED support can check it for you.
+> 2. **Allow one test booking.** Once tracking is set up, we'll make one test appointment through the website. It'll be named **"TEST Vortala – please delete"**, at a time you choose (ideally a slot you don't expect to fill). Please let us know a good day and time, and delete the appointment afterwards. While you're at it, it's worth making a test booking yourselves on your phone. One caller recently told us online booking for the $199 special didn't work for them.
 >
-> 3. **Allow one test booking.** Once tracking is set up, we'll make one test appointment through the website. It'll be named **"TEST Vortala – please delete"**, at a time you choose (ideally a slot you don't expect to fill). Please let us know a good day and time, and delete the appointment afterwards. While you're at it, it's worth making a test booking yourselves on your phone. One caller recently told us online booking for the $199 special didn't work for them.
->
-> 4. **Let us know before changing the Book Now page.** Please keep the SKED scheduler on the Book Now page as it is now. If you or your web provider plan to move it, replace it, or link to SKED directly from elsewhere on the site, give us a heads-up so tracking keeps working.
+> 3. **Let us know before changing the Book Now page.** Please keep the SKED scheduler on the Book Now page as it is now. If you or your web provider plan to move it, replace it, or link to SKED directly from elsewhere on the site, give us a heads-up so tracking keeps working.
 >
 > One quick question: do returning patients ever book through the same Book Now page, or only new patients?
 >
@@ -36,14 +34,15 @@ Requested by SS, 2026-10-23. Goal: count **completed** new-patient bookings made
 >
 > Thanks!
 
-*(Internal: the GTM request may already be under way. Notes say Sara is getting GTM access, so drop item 1 if it's come through.)*
+*(Internal: GTM access is already in place (SS, 23 Oct), so the client doesn't need to do anything in GTM. Optional extra, only if GTM shows a GA4 tag (G-…) and you want the GA4 event: ask the client to add paidsearch@vortala.com as an **Editor** on that Google Analytics property (Admin → Property access management → +).)*
 
 ---
 
 ## B. Sara's steps
 
 ### 1. Before building
-- [ ] GTM access to GTM-MBGVZFCG (Publish) for paidsearch@ (or your own login). GA4 access too if they have a property.
+- [x] GTM access to GTM-MBGVZFCG (in place, 23 Oct). Check it's **Publish** level, not just Edit, or you'll need someone else to publish.
+- [ ] Optional: if GTM has a GA4 tag (G-…), ask for GA4 Editor access so you can mark the booking as a key event.
 - [ ] The client has confirmed SKED's redirect URL is blank.
 - [ ] Decide the conversion **value**: none, or a fixed value (e.g. 199 for the new-patient special). Tell me which.
 - [ ] Check in GTM whether a **Conversion Linker** tag fires on All Pages and whether a Google Ads tag (AW-…) already exists. The page HTML has no AW- tag, so anything there is inside GTM.

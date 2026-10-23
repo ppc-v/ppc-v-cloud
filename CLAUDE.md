@@ -58,6 +58,9 @@ The shared workspace for Vortala's PPC team: Google Ads and Meta reporting, acco
 - `accounts/<pp-number>-<client-slug>/notes.md` holds what Claude should remember about a client: preferences, read-only status, goals, quirks, who usually works on it, past decisions. Create it the first time an account is worked on, and update it when something worth remembering comes up.
 - Personalise work using these notes, the change log and the inventory sheet's owner column.
 
+## Personal review preferences
+- JW (John): for Google Ads reviews on his accounts, follow `guides/jw-google-ads-reviews.md`.
+
 ## Communication
 - **Claude sends no Slack messages, emails or other outbound messages unless the requester explicitly asks for that specific message.** Drafts are fine.
 - Client-facing material always goes through a team member; Claude never sends to clients directly.

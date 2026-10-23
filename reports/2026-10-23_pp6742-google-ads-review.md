@@ -27,7 +27,7 @@ Requested by: SS. Read-only; nothing changed. Google Ads 288-398-9795 (US Easter
 1. With the client: fix/test phone answering and the IVR new-patient route (biggest win, no ad cost).
 2. Make "New Patient Book Now Page View" and "Calls from ads" secondary. In WhatConverts, send only 45s+ calls (as on PP1864).
 3. Manual CPC with caps (about USD 16-20), replacing Max Conversions.
-4. Phrase/exact for chiropractor, chiropractor huntersville, chiropractor near me (+ "chiropractor charlotte"? within radius only); pause the broad versions.
+4. Phrase/exact for chiropractor, chiropractor huntersville, chiropractor near me; pause the broad versions.
 5. Negatives for the categories above.
 6. Unpin most RSA headlines, or add an unpinned RSA per ad group.
 7. Keep USD 90/day. On Manual CPC that should land close to USD 2,500/month over about 17 scheduled days; check after week 1.

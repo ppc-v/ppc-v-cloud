@@ -5,6 +5,7 @@
 - **WhatConverts profile:** PP6788 - Resolve Chiropractic and Wellness
 - **GTM container / GA4 property:** not checked yet
 - **Access:** normal
+- **Ad schedule:** Mon–Fri 8am–6pm (account time). Weekends are dark by design.
 - **Usually worked on by:** Sara (owner). John has also made changes.
 - Location: Celina, TX area. 5 proximity radii (1–8 mi). Timezone America/Chicago, USD.
 
@@ -25,3 +26,4 @@
 - 2026-10-16 SS: blocked McKinney and Frisco (over 12 mi from the practice; SS's geo rule for this account), plus softwave and laser. Asked WhatConverts to send only 30s+ calls to Google Ads; this has to be set in the WhatConverts UI.
 - 2026-10-16 SS: 16 Spanish-language phrase negatives added to the Search Queries list.
 - 2026-10-16 SS: WhatConverts call import limited to 30s+ calls. Conversion counts from this date aren't comparable to the first 30 days.
+- 2026-10-23 one-week check (19–22 Oct): $359, 5 conversions ($72 CPL, now counting 30s+ calls only), impression share 47% (was 39%), budget-lost share down to 11% (was 30%). The 7s call wasn't imported, so the 30s filter looks to be working. 24 new negatives proposed (not applied).

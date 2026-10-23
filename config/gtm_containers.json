@@ -109,6 +109,16 @@
   "name": "chiropractor.beachtownhealth.com",
   "account": "Adwords - PP5007ppc"
  },
+ "GTM-KNN66LF": {
+  "path": "accounts/6104116095/containers/118925289",
+  "name": "www.shentondental.com.au",
+  "account": "Shenton Park Family Dental-PP5545"
+ },
+ "GTM-KSZDKX9": {
+  "path": "accounts/6099808283/containers/116639789",
+  "name": "www.bhbdental.co.nz",
+  "account": "Blockhouse Bay Dental Centre -PP5080"
+ },
  "GTM-KXPTNHQ": {
   "path": "accounts/6100117677/containers/116806207",
   "name": "www.vitalitysemaphore.com.au",
@@ -138,6 +148,11 @@
   "path": "accounts/6063005056/containers/96984871",
   "name": "www.prontopilates.com.au",
   "account": "PP5951 - Pronto Pilates"
+ },
+ "GTM-MM8FV2LT": {
+  "path": "accounts/6380277168/containers/265926523",
+  "name": "www.hersheyfamilychiropractic.com",
+  "account": "Hershey Family Chiropractic"
  },
  "GTM-MMD3WZB": {
   "path": "accounts/6004163792/containers/46987287",
@@ -183,6 +198,11 @@
   "path": "accounts/6005225454/containers/53996177",
   "name": "www.urbanhealthgroup.ca",
   "account": "PP3842 - Urban Health Group"
+ },
+ "GTM-MXWHJHK": {
+  "path": "accounts/6105689813/containers/119799649",
+  "name": "www.goffstownchirocare.com",
+  "account": "Goffstown Chiropractic Care, PLLC - PP1654"
  },
  "GTM-N32DPB2": {
   "path": "accounts/6110308921/containers/122146718",
@@ -243,6 +263,11 @@
   "path": "accounts/4702151572/containers/12139716",
   "name": "www.fraumchiropracticofhiltonhead.com",
   "account": "Fraum Chiropractic Life Center"
+ },
+ "GTM-NRMFXLT": {
+  "path": "accounts/6098459539/containers/115902921",
+  "name": "www.dentistperth.com",
+  "account": "HM Dental - PP4410"
  },
  "GTM-NV9QSBD": {
   "path": "accounts/6102727731/containers/118189009",

@@ -188,5 +188,28 @@ CLAUDE.md: until the team sets a HIPAA / patient-data policy, nothing about pati
 
 Building the phase 1 booking tag, with the opaque ID, can go ahead now. It sends no patient data.
 
-### Extra ask for the client (add once the policy is signed off)
-> Each week (e.g. every Monday), please send us the appointment date and time of each online new-patient booking from the previous week, marked showed / no-show, and whether they started care. Times only, please, no names. We use this to see which of our ads bring in patients who actually come in.
+### Extra ask for the client (send only once the policy is signed off)
+> **Subject: One weekly update so we can see which ads bring in real patients**
+>
+> Hi Dr. Gross and team,
+>
+> Online booking tracking is now live. Next, we'd like to see which bookings from your ads turn into patients who come in and start care, so we can put more of your budget behind the ads that bring in real new patients.
+>
+> **Each Monday**, please send us a short list of the **online new-patient bookings** for appointments in the previous week (Monday to Sunday). For each one, we just need:
+>
+> | Appointment date | Appointment time | Showed? | Started care? |
+> |---|---|---|---|
+> | e.g. Wed 4 Nov | 5:45 pm | Yes | Yes |
+> | e.g. Thu 5 Nov | 12:30 pm | No | – |
+> | e.g. Thu 5 Nov | 3:15 pm | Yes | Not yet |
+>
+> A few notes:
+> - **Online bookings only**: appointments the patient booked themselves through the Book Now page on your website (SKED shows these as online / new patient portal bookings). Please leave out phone and walk-in bookings.
+> - **Use the original appointment time.** If a patient rescheduled, use the time they first booked and put "Rescheduled" in the Showed column, plus the new date if you have it.
+> - **"Started care"** means they accepted a care plan, or came back for a second visit, whichever you usually count as a new patient. "Not yet" is fine; just update it on a later list.
+> - **Please don't include names, phone numbers, emails or anything about their condition or treatment.** We only need the date, the time and the two answers.
+> - If there were no online bookings that week, a quick "none this week" is perfect.
+>
+> We match these times to the online bookings our tracking recorded. Google only receives a scrambled booking reference, never the time or any patient details. This list is what lets us tell Google which ads are bringing in real patients, so it really helps if it arrives every week.
+>
+> Thank you!

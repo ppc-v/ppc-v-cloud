@@ -21,6 +21,7 @@
 - Calls: about a third of ad calls never reach a person; most genuine new-patient callers reach voicemail ("off hours or assisting others") during ad hours. Raise with the client.
 
 - Booking engine: **SKED** (portal.sked.life/new-patient), embedded as an iframe on /book-now/. "New Patient Book Now Page View" only means someone opened that page, not that they booked. The iframe is cross-domain, so GTM on the site can't see inside it. Tracking options to check once GTM access comes through: a SKED confirmation redirect or thank-you URL, SKED postMessage events, or SKED's own analytics integration. SS wants to work on this once she has GTM access.
+- SKED tracking method (checked 2026-10-23 from SKED's portal code): on a saved booking the iframe sends `parent.postMessage` with `actionType:"confirm"`, including the patient's name, email, phone and time, so a GTM listener on the parent page can fire the conversion. Don't forward any of those fields. SKED's redirect URL only works when the portal isn't embedded; embedded, it leaves the patient on a spinner, so it should be blank. Plan, client message and GTM code: `reports/2026-10-23_pp6742-sked-booking-tracking.md`.
 
 ## History and decisions
 - 2026-10-15: paused by the monthly budget rule at USD 2,512 (on a USD 144.25 budget, Max Conv spent about USD 290/day).

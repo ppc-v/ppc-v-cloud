@@ -116,3 +116,44 @@ Goals → Conversions → Summary → **+ New conversion action** → Website �
 - [ ] Log the changes in `logs/changes/` and update `accounts/pp6742-touch-light-chiropractic/notes.md` (I'll do both).
 
 **Timing:** the campaign is paused by the budget rule until 1 Nov, so setting this up before then means November starts with clean booking data.
+
+---
+
+## C. Salesforce case comment for the DMS (draft, SS to post)
+
+Hi [DMS name],
+
+PPC request for Touch Light Chiropractic (PP6742), from Sara Stuka.
+
+What we're doing: setting up tracking for completed online bookings made through SKED from Google Ads. Right now Google Ads only counts people who open the Book Now page, not people who actually book. Once this is live, the ads will be measured and optimised on real new-patient bookings. We'd like it in place before the campaign restarts on 1 Nov.
+
+How: SKED already sends a "booking confirmed" signal to the website's Book Now page, where the scheduler is embedded. We'll pick that up in Google Tag Manager and send it to Google Ads as a conversion. No patient names, emails, phone numbers or appointment details go to Google. Vortala manages the website and GTM, so nothing changes on the site and the client doesn't need to touch GTM.
+
+What we need from you: please send the client the message below and pass their replies back on this case. The main things we need back are the answer on the SKED redirect setting, a day and time for the test booking, and whether returning patients use the Book Now page.
+
+----- Message to client -----
+
+Subject: Quick setup so we can track online bookings from your ads
+
+Hi Dr. Gross and team,
+
+At the moment we can see when someone from your Google Ads opens your Book Now page, but not whether they actually finish booking an appointment in SKED. We'd like to fix that, so the ads are judged on real new-patient bookings rather than page visits. Most of the work is on our side. We need three things from you:
+
+1. Check one SKED setting. In your SKED online scheduling (new patient portal) settings, if there's a "redirect URL" or "thank-you page" after booking, please leave it blank or tell us what it's set to. Your scheduler is built into your website's Book Now page, and a redirect can stop patients seeing the confirmation screen. If you're not sure where this is, SKED support can check it for you.
+
+2. Allow one test booking. Next week we'll make one test appointment through your website, named "TEST Vortala – please delete". Please tell us a day and time between Wed 28 and Fri 30 Oct that suits you (ideally a slot you don't expect to fill), and delete the appointment afterwards. It's also worth making a test booking yourselves on your phone. One caller recently told us online booking for the $199 special didn't work for them.
+
+3. Let us know if your SKED online booking changes. We look after the Book Now page on your website, so you don't need to change anything there. But if your SKED new-patient booking link changes, online booking is switched off, or you move to different scheduling software, please tell us first so tracking keeps working.
+
+One quick question: do returning patients ever book through the same Book Now page, or only new patients?
+
+For the first month, it would help if you could tell us how many new-patient online bookings SKED shows, so we can check our numbers match yours.
+
+No patient names, emails, phone numbers or appointment details are sent to Google. We only record that a booking happened.
+
+Thank you!
+
+----- End of message -----
+
+Thanks,
+Sara

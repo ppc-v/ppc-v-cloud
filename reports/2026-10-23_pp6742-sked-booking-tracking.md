@@ -129,7 +129,7 @@ What we're doing: setting up tracking for completed online bookings made through
 
 How: SKED already sends a "booking confirmed" signal to the website's Book Now page, where the scheduler is embedded. We'll pick that up in Google Tag Manager and send it to Google Ads as a conversion. No patient names, emails, phone numbers or appointment details go to Google. Vortala manages the website and GTM, so nothing changes on the site and the client doesn't need to touch GTM.
 
-What we need from you: please send the client the message below and pass their replies back on this case. The main things we need back are the answer on the SKED redirect setting, a day and time for the test booking, and whether returning patients use the Book Now page.
+What we need from you: please send the client the message below and pass their replies back on this case. The main things we need back are the answer on the SKED redirect setting, a day and time for the test booking, whether returning patients use the Book Now page, and the monthly numbers from early December.
 
 ----- Message to client -----
 
@@ -147,7 +147,7 @@ At the moment we can see when someone from your Google Ads opens your Book Now p
 
 One quick question: do returning patients ever book through the same Book Now page, or only new patients?
 
-For the first month, it would help if you could tell us how many new-patient online bookings SKED shows, so we can check our numbers match yours.
+Once a month (in the first week of the month), could you send us three numbers for the previous month: how many new patients booked online, how many of those showed for their first visit, and how many started care? If SKED can split these by the "Referrer" answer patients pick when booking (e.g. Google), even better. We only need the numbers, no patient names. Please also check that "Google" is one of the Referrer options on your new-patient booking form.
 
 No patient names, emails, phone numbers or appointment details are sent to Google. We only record that a booking happened.
 

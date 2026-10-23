@@ -25,3 +25,4 @@
 - 2026-04: account hacked. Two Vietnamese "SANI - WOLF Thái" campaigns spent about CAD 17, now removed. Didn't run in May.
 - Sep 2026 spent CAD 1,983; Oct 2026 spent CAD 2,233 (CAD 313 over budget), paused by the rule on 15 Oct.
 - 2026-10-23 SS: asked for a review and recommendations plus WhatConverts call scoring. See `reports/2026-10-23_pp1864-google-ads-review.md`.
+- 2026-10-23 SS: WhatConverts scores set for 3 calls. Google Ads: budget CAD 150 → 85, "Calls from ads" secondary, Manual CPC (calgary/near me $20, chiropractor exact $18, others $16), broad keywords paused and phrase/exact added, 31 negatives, 10 km radius only. Log `logs/changes/2026-10-23_1137Z_SS_pp1864-review-fixes-and-wc-scores.md`. **Current offer: $49 new patient exam** (SS confirmed). Check pacing around 8 Nov. To do: 60s+ call rule in WhatConverts (SS), new RSA, GTM access + form audit.

@@ -188,6 +188,30 @@ CLAUDE.md: until the team sets a HIPAA / patient-data policy, nothing about pati
 
 Building the phase 1 booking tag, with the opaque ID, can go ahead now. It sends no patient data.
 
+### What the client sends us first (before anything goes back to Google)
+Send once Vortala has decided its own position (Jacob), so the agreement wording comes from Vortala, ideally reviewed by legal. Draft for the DMS:
+
+> **Subject: Your OK to measure which ads bring in new patients**
+>
+> Hi Dr. Gross and team,
+>
+> Once your online booking tracking is live, we'd like to go one step further and measure which ad bookings actually come in and start care. That lets Google put your budget behind the ads that bring real new patients, not just bookings. Because this involves your patients' appointments, we need a few things from you before we start:
+>
+> 1. **Your written OK.** Please reply confirming you're happy for Vortala to receive a weekly list of online new-patient appointment dates and times (no names or contact details), marked showed / started care. Also confirm you're happy for us to use it to send Google Ads an anonymous signal, a scrambled booking reference plus "showed" or "started care", with no patient details. *(Vortala to attach or link its standard authorization here if it has one.)*
+> 2. **Our business associate agreement.** Please confirm whether you have a signed Business Associate Agreement (BAA) with Vortala. If you're not sure or don't have one, let us know and we'll send one over.
+> 3. **Privacy policy.** We'll add a short line to your website's privacy policy explaining that we measure ad results, and send it to you to approve. If your practice's HIPAA Notice of Privacy Practices says anything about marketing or sharing information with vendors, please send us a copy or check it with whoever looks after your compliance.
+> 4. **Who sends the weekly list.** The name and email of the person at the practice who'll send it each Monday, and the easiest way for them to pull it from SKED.
+> 5. **What "started care" means for you.** For example, they accepted a care plan, or came back for a second visit.
+> 6. **Roughly what a new patient is worth** to the practice (e.g. average first-year value), so we can tell Google how much more a patient who starts care is worth than a booking. A rough figure is fine.
+>
+> Nothing is sent to Google until we have these. Thank you!
+
+Internal checklist before the first upload:
+- [ ] Vortala policy decision (Jacob), ideally with legal review of the wording in item 1.
+- [ ] Items 1–2 received in writing; saved where the team keeps client agreements (not in this repo).
+- [ ] Privacy policy line added to touchlightchiro.com and approved by the client.
+- [ ] Values agreed (items 5–6) and the adjustment window confirmed.
+
 ### Extra ask for the client (send only once the policy is signed off)
 > **Subject: One weekly update so we can see which ads bring in real patients**
 >

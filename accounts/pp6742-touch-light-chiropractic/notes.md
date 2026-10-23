@@ -24,3 +24,4 @@
 - 2026-10-15: paused by the monthly budget rule at USD 2,512 (on a USD 144.25 budget, Max Conv spent about USD 290/day).
 - 2026-10-23 SS: asked for a review. See `reports/2026-10-23_pp6742-google-ads-review.md`.
 - 2026-10-23 SS: rescored 12 WhatConverts calls (8 quotable new-patient calls since late July). Google Ads: Manual CPC (Huntersville/near me $20, chiropractor exact $18, others $16), 6 broad keywords paused, "huntersville chiropractor" phrase added, 23 negatives, unpinned copies of the 3 RSAs, "Calls from ads" secondary; budget kept at $90. Log `logs/changes/2026-10-23_1209Z_SS_pp6742-review-fixes-and-wc-scores.md`. SS is getting GTM access. Check pacing about 8 Nov.
+- 2026-10-23 SS: WhatConverts now sends only 45s+ calls to Google Ads (log `logs/changes/2026-10-23_1214Z_SS_pp6742-whatconverts-45s-calls.md`). SS is raising the missed-call / voicemail issue with the client.

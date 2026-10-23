@@ -18,7 +18,10 @@
 - Paused ad groups: Chiropractor, Branded, Massage, Chiropractor Near.
 
 ## Tracking
-- Primary: WhatConverts "Calls from Ad Extension" + "Calls from Google Ads" imports, **Google's own "Calls from ads" (also primary, which double counts calls on the call asset)**, and GA4 forms "PPC Appt Request Form" (last recorded Aug 2026) and "Custom Form Appt Request" (silent since June).
+- **Since 2026-10-23, primary:** WhatConverts "Calls from Ad Extension" + "Calls from Google Ads", and **"Custom Form Appt Request" (GA4 `custom_form_appointment_request` = page view of /thank-you-appointment-request/: the correct form conversion, per SS)**. Secondary: Google's "Calls from ads" and "PPC Appt Request Form" (/thank-you-appointment-request-ad/, unused since Aug).
+- The form is embedded from forms.vortala.com (embed 6938892). GA4 attributes many thank-you views to "forms.vortala.com / referral", so Google Ads sees almost none. Fix: add forms.vortala.com to GA4 unwanted referrals (UI only).
+- GA4 property 327914033 (G-TKLTYM44SJ) is also linked to another Google Ads account, 7638907768.
+- No consent banner found in the landing page HTML (Canada: consent rules likely apply). It may load via GTM, which isn't shared with paidsearch@.
 - WhatConverts quotable scoring: someone scores calls about 2 weeks after they happen. Yes = a new patient who booked or a strong new-patient enquiry; No = existing patients, admin, short/missed calls, irrelevant callers.
 
 ## History and decisions
@@ -26,3 +29,4 @@
 - Sep 2026 spent CAD 1,983; Oct 2026 spent CAD 2,233 (CAD 313 over budget), paused by the rule on 15 Oct.
 - 2026-10-23 SS: asked for a review and recommendations plus WhatConverts call scoring. See `reports/2026-10-23_pp1864-google-ads-review.md`.
 - 2026-10-23 SS: WhatConverts scores set for 3 calls. Google Ads: budget CAD 150 → 85, "Calls from ads" secondary, Manual CPC (calgary/near me $20, chiropractor exact $18, others $16), broad keywords paused and phrase/exact added, 31 negatives, 10 km radius only. Log `logs/changes/2026-10-23_1137Z_SS_pp1864-review-fixes-and-wc-scores.md`. **Current offer: $49 new patient exam** (SS confirmed). Check pacing around 8 Nov. To do: 60s+ call rule in WhatConverts (SS), new RSA, GTM access + form audit.
+- 2026-10-23 SS: "PPC Appt Request Form" set to secondary; new $49 RSA 829431185750 added (log `logs/changes/2026-10-23_1149Z_SS_pp1864-form-conversion-new-rsa.md`). SS to add the forms.vortala.com unwanted referral in GA4.

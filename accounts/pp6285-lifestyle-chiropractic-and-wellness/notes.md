@@ -22,6 +22,7 @@
 - Calls from ads and Calls from Ad Extensions both recorded the same calls on 2 and 5 Oct 2026 (double counting).
 - Call asset (651) 448-2894 has call conversion reporting disabled. Most paid calls arrive without a GCLID.
 - No form or booking confirmation is tracked as a lead.
+- Online booking is the **Aloha (ReviewWave) New Patient Scheduler** on /book-online/ (embed 23362a1b…). It's built into the page, not an iframe, and fires `RWEmbedJS.appt_scheduled` when `window._rw_sched_config` is defined. The ad landing page and the homepage don't link to /book-online/. Existing patients book at theschedulingapp.com (don't track it). Plan and client access request: `reports/2026-10-23_pp6285-aloha-booking-tracking-plan.md` (2026-10-23 SS, not built yet).
 
 ## History and decisions
 - 2026-04: the account was compromised. Five campaigns (DR-JR-SHA, DR-JR-Murong, DR-JR-VAN, DR-E300-ADAM-LD-Meme, DR-E300-ADAM-LD-Meme #2) ran Indonesian gambling ads and fake Mexican passport ads and spent about $2,660 in April. They are now removed, though their ad groups and ads remain under the removed campaigns. This is the same pattern and month as PP5372. No record here of how it was handled (credit, access review).

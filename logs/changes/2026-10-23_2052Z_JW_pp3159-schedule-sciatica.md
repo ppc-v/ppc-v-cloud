@@ -25,4 +25,5 @@ PP3159 - Herron Family Chiropractic (681-623-5254), campaign "Perfect Patients" 
 ## Notes
 - Why: the campaign had zero impressions 25 Aug - 20 Oct (no eligible auctions; card on file is fine per JW) and resumed 21-22 Oct after a campaign + budget change on 22 Oct (who/what not visible through the API; check Change History in the UI). When live in August it converted well (CAD 441, 23 clicks, 10 conversions); the limit is reach (about 25 eligible searches a day), not budget (CAD 120/day).
 - Calls after 17:00 go to voicemail; watch for missed calls from the new evening hours.
+- Correction (JW): the "Enable Campaign 1st" rule is active, so it wasn't the cause of the dark period; ads run during the closure week (client didn't ask to pause).
 - Case note posted on Salesforce case 00553324 (internal comment 00aN100000dcu7ZIAQ).

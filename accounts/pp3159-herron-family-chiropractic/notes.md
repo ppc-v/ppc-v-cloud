@@ -15,10 +15,11 @@
 - One live campaign, "Perfect Patients" (Search, Maximize conversions, CAD 120/day; Mon-Thu **6:00-21:00 since 2026-10-23** (was 8-17); 5 and 10 km radius around 1005 Elgin St W, presence only; mobile +30%).
 - Ad groups live: Chiropractor, Chiropractor Cobourg, Chiropractor Near Me, **Sciatica (enabled 2026-10-23; phrase "sciatica treatment" and "sciatica relief" only)**. Paused: Chiropractor Port Hope.
 - Negatives that limit reach (not changed yet): "port hope" and "northumberland" (Search Queries), "free" (Stock Negative Keywords). Brand "herron" is excluded.
-- The "1st of month" re-enable rule was turned off by JW on 2026-06-01. If the campaign gets paused (e.g. by the budget rule), nothing turns it back on.
+- The "Enable Campaign 1st" rule is active (JW 2026-10-23), so a budget-rule pause is undone on the 1st.
+- Ads run during office closures unless the client asks to pause (JW 2026-10-23).
 
 ## History and decisions
 - 2026-06: card on file failed; CAD 687 bad spend credited. 2026-08-06 client updated billing; live 2026-08-07.
 - 2026-08: CAD 441, 23 clicks, 10 conversions; "chiropractor cobourg" exact was the best keyword.
-- 2026-08-25 to 2026-10-20: zero impressions (not in any auctions). Card on file is new and fine (JW). Resumed 21-22 Oct after a campaign + budget change on 22 Oct (who/what unknown from the API).
-- 2026-10-23 JW: ad schedule extended to 6-21 Mon-Thu; Sciatica ad group enabled (treatment/relief phrase only). Not approved yet: 20 km radius, Port Hope negatives + ad group, closure-week pause, 1st-of-month rule. Log `logs/changes/2026-10-23_2052Z_JW_pp3159-schedule-sciatica.md`; case note on 00553324.
+- 2026-08-25 to 2026-10-20: zero impressions (not in any auctions). Card on file is new and fine (JW). Resumed 21-22 Oct after a campaign + budget change on 22 Oct (who/what unknown from the API). Not the 1st-of-month rule (it's active). Cause unconfirmed: check Change History in the UI.
+- 2026-10-23 JW: ad schedule extended to 6-21 Mon-Thu; Sciatica ad group enabled (treatment/relief phrase only). Not done: 20 km radius, Port Hope negatives + ad group. No closure-week pause (client didn't ask). Log `logs/changes/2026-10-23_2052Z_JW_pp3159-schedule-sciatica.md`; case note on 00553324.

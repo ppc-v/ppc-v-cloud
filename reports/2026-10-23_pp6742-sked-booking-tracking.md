@@ -77,26 +77,40 @@ Goals → Conversions → Summary → **+ New conversion action** → Website �
   if (window.__skedListener) return;
   window.__skedListener = true;
   var sent = false;
+  var SALT = 'tlc-6742-sked'; // fixed, so the same appointment always gives the same ID
+  function push(type, id) {
+    window.dataLayer = window.dataLayer || [];
+    window.dataLayer.push({ event: 'sked_booking_confirmed', sked_patient_type: type, sked_booking_id: id });
+  }
   window.addEventListener('message', function (e) {
     if (e.origin !== 'https://portal.sked.life') return;
     var msg;
     try { msg = typeof e.data === 'string' ? JSON.parse(e.data) : e.data; } catch (err) { return; }
     if (!msg || msg.actionType !== 'confirm' || sent) return;
     sent = true;
-    // Only the booking type leaves this function. Name, email, phone and time are discarded.
-    var returning = !!(msg.payload && msg.payload.email === 'example@ex.com');
-    window.dataLayer = window.dataLayer || [];
-    window.dataLayer.push({ event: 'sked_booking_confirmed', sked_patient_type: returning ? 'returning' : 'new' });
+    // Only the booking type and a scrambled booking ID leave this function.
+    // Name, email, phone and appointment time are discarded.
+    var p = msg.payload || {};
+    var type = p.email === 'example@ex.com' ? 'returning' : 'new';
+    try {
+      var bytes = new TextEncoder().encode(SALT + '|' + (p.systemDate || ''));
+      crypto.subtle.digest('SHA-256', bytes).then(function (buf) {
+        var hex = Array.prototype.map.call(new Uint8Array(buf), function (b) { return ('0' + b.toString(16)).slice(-2); }).join('');
+        push(type, 'sked_' + hex.slice(0, 24));
+      }, function () { push(type, ''); });
+    } catch (err) { push(type, ''); }
   });
 })();
 </script>
 ```
 
-**b. Variable:** Variables → New → **Data Layer Variable**, name `DLV – sked_patient_type`, variable name `sked_patient_type`.
+The booking ID is built from the appointment date and time (`MM-dd-yyyy hh:mm a`, as SKED's message gives it), so we can work it out again later from the client's weekly list. It also stops the same booking being counted twice.
+
+**b. Variable:** Variables → New → **Data Layer Variable**, name `DLV – sked_patient_type`, variable name `sked_patient_type`. Make a second one: `DLV – sked_booking_id`, variable name `sked_booking_id`.
 
 **c. Trigger:** Triggers → New → **Custom Event**, name `SKED – new patient booking`, event name `sked_booking_confirmed`, fires on **Some Custom Events**: `DLV – sked_patient_type` equals `new`.
 
-**d. Google Ads tag:** Tags → New → **Google Ads Conversion Tracking**, name `Google Ads – SKED New Patient Booking`. Paste the Conversion ID and label, leave value blank unless you chose one, no enhanced conversions. Trigger: `SKED – new patient booking`.
+**d. Google Ads tag:** Tags → New → **Google Ads Conversion Tracking**, name `Google Ads – SKED New Patient Booking`. Paste the Conversion ID and label, set **Transaction ID** to `{{DLV – sked_booking_id}}`, leave value blank unless you chose one, no enhanced conversions. Trigger: `SKED – new patient booking`.
 
 **e. Conversion Linker:** if there isn't one, add a **Conversion Linker** tag on All Pages.
 
@@ -105,7 +119,7 @@ Goals → Conversions → Summary → **+ New conversion action** → Website �
 ### 4. Test (GTM Preview, before publishing)
 1. Click **Preview**, enter `https://www.touchlightchiro.com/book-now/?gclid=test123`, and make the agreed test booking ("TEST Vortala – please delete").
 2. In Tag Assistant, check that `sked_booking_confirmed` appears **once**, `sked_patient_type` = `new`, and the Google Ads tag fired.
-3. Check the dataLayer has **no** name, email or phone in it.
+3. Check the dataLayer has **no** name, email or phone in it, and that `sked_booking_id` looks like `sked_` + 24 letters/numbers.
 4. If the client allows it, also test the "Returning Patients Here" path and check it shows `returning` and the Ads tag **doesn't** fire. If it shows `new`, tell me and I'll change the check.
 5. Ask the client to delete the test appointment.
 
@@ -237,3 +251,19 @@ Internal checklist before the first upload:
 > We match these times to the online bookings our tracking recorded. Google only receives a scrambled booking reference, never the time or any patient details. This list is what lets us tell Google which ads are bringing in real patients, so it really helps if it arrives every week.
 >
 > Thank you!
+
+---
+
+## E. Phase 2 in simple steps (after phase 1 is live and working)
+
+1. **Check phase 1 is solid.** Bookings show in Google Ads, roughly match the client's monthly numbers, and each one has a booking ID (Transaction ID).
+2. **Get the OK inside Vortala.** Ask Jacob to sign off on sending "showed / started care" back to Google Ads.
+3. **Get the OK from the client.** The DMS sends the "Your OK to measure which ads bring in new patients" message (section D). Wait for the written OK and the BAA answer.
+4. **Update the website privacy policy.** Add one line about measuring ad results; the client approves it.
+5. **Pick the values.** For example showed = 1, started care = 10 (or a $ figure from the client's new-patient value).
+6. **Start the weekly list.** The DMS sends the weekly-list request (section D). The client sends appointment date, time, showed?, started care? every Monday, with no names.
+7. **Each Monday, give the list to Claude.** Claude matches each line to a booking, then shows you a preview: which bookings get removed (no-shows) and which go up in value (showed / started care).
+8. **Approve, and Claude uploads it** to Google Ads and logs it. Do this weekly, because Google only accepts changes for a limited time after a booking.
+9. **After about 6 weeks, review.** If the numbers look right, decide whether to bid on it. Today the campaign is Manual CPC, so for now it's for reporting.
+
+Note on the booking ID: it's scrambled, but because it's made from the appointment time with a fixed code in the website, someone who studied the site's code could in theory work out the appointment time from it (never a name or contact detail). Mention this when asking Jacob in step 2.

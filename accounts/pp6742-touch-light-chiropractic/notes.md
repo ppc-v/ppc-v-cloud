@@ -20,6 +20,8 @@
 - Primary: WhatConverts "Calls From Ad Extensions" and "Calls From Google Ads" (one per click), and GA4 "New Patient Book Now Page View" (a page view, many per click; **SS chose to keep it primary**, 2026-10-23). Google's own "Calls from ads" set to secondary 2026-10-23.
 - Calls: about a third of ad calls never reach a person; most genuine new-patient callers reach voicemail ("off hours or assisting others") during ad hours. Raise with the client.
 
+- Booking engine: **SKED** (portal.sked.life/new-patient), embedded as an iframe on /book-now/. "New Patient Book Now Page View" only means someone opened that page, not that they booked. The iframe is cross-domain, so GTM on the site can't see inside it. Tracking options to check once GTM access comes through: a SKED confirmation redirect or thank-you URL, SKED postMessage events, or SKED's own analytics integration. SS wants to work on this once she has GTM access.
+
 ## History and decisions
 - 2026-10-15: paused by the monthly budget rule at USD 2,512 (on a USD 144.25 budget, Max Conv spent about USD 290/day).
 - 2026-10-23 SS: asked for a review. See `reports/2026-10-23_pp6742-google-ads-review.md`.

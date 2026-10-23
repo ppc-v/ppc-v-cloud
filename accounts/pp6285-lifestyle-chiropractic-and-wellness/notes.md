@@ -3,7 +3,7 @@
 - **Google Ads ID:** 889-106-4862 (America/Denver, USD). Brand label: Perfect Patients
 - **Meta ad account ID:** none in the inventory
 - **WhatConverts profile:** 128417 (account 85838). Tracking numbers seen on google/cpc calls: +1 651-448-2853 (with GCLID), +1 651-448-2894 (the call asset, no GCLID), +1 651-448-2907 (no GCLID).
-- **GTM container / GA4 property:** GTM-TMMG5BN8 on the site. Vortala owns it, but it isn't shared with paidsearch@ yet; Sara is getting access (2026-10-23). GA4 G-6SMSLQ3FYK, Google Ads tag AW-16627031643, Meta pixel 2530064823884699 on the landing page.
+- **GTM container / GA4 property:** GTM-TMMG5BN8 on the site. Vortala owns it, but it isn't shared with paidsearch@ yet; Sara is getting access (2026-10-23). Vortala also manages GA4. GA4 G-6SMSLQ3FYK, Google Ads tag AW-16627031643, Meta pixel 2530064823884699 on the landing page.
 - **Access:** normal
 - **Usually worked on by:** Sara (Google label)
 - **Salesforce:** $2,500/month Google budget, billing day 4.

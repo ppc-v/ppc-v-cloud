@@ -16,7 +16,7 @@ Requested by SS, 2026-10-23. This is a read-only plan: nothing was changed.
 ### 1. Get access (send the client message below)
 - GTM-TMMG5BN8: Vortala owns it (Sara confirmed 2026-10-23), and Sara is getting access for paidsearch@ internally. The client doesn't need to do anything for GTM.
 - Aloha / ReviewWave: a user login, or a staff member who can check the appointment list, so we can confirm test bookings and cancel them.
-- Optional: GA4 G-6SMSLQ3FYK with Editor access for paidsearch@, so we can mark a GA4 key event.
+- GA4 G-6SMSLQ3FYK: Vortala manages it too (Sara, 2026-10-23), so the client doesn't need to do anything for GA4.
 - The client's OK to make 1–2 test bookings, which we cancel straight away.
 
 ### 2. Website (optional)
@@ -42,7 +42,7 @@ Requested by SS, 2026-10-23. This is a read-only plan: nothing was changed.
 2. **Trigger:** Custom Event `aloha_booking`.
 3. **Tags on that trigger:**
    - Google Ads conversion: a new action "Online Booking – Aloha" (category Book appointment, count **one**, value per Sara). Make sure the Conversion Linker tag exists.
-   - GA4 event `aloha_booking`, marked as a key event (if we get GA4 access).
+   - GA4 event `aloha_booking`, marked as a key event (Vortala manages the GA4 property).
    - Meta: only if Sara wants it. A plain `Schedule` event with no parameters.
 4. **Fallback** if the event doesn't fire in testing: an Element Visibility trigger on `.rw-thanks-message` / `.rw-completed-checkmark` (check this in Preview mode against a real confirmation screen).
 

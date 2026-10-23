@@ -35,14 +35,14 @@ Requested by SS, 2026-10-23. Goal: count **completed** new-patient bookings made
 >
 > Thanks!
 
-*(Internal: GTM access is already in place (SS, 23 Oct), so the client doesn't need to do anything in GTM. Optional extra, only if GTM shows a GA4 tag (G-…) and you want the GA4 event: ask the client to add paidsearch@vortala.com as an **Editor** on that Google Analytics property (Admin → Property access management → +).)*
+*(Internal: Vortala already has access to the GTM container, so the client doesn't need to do anything in GTM. Sara still needs to be added internally (23 Oct). The message can go before that. Optional extra, only if GTM shows a GA4 tag (G-…) and you want the GA4 event: ask the client to add paidsearch@vortala.com as an **Editor** on that Google Analytics property (Admin → Property access management → +).)*
 
 ---
 
 ## B. Sara's steps
 
 ### 1. Before building
-- [x] GTM access to GTM-MBGVZFCG (in place, 23 Oct). Check it's **Publish** level, not just Edit, or you'll need someone else to publish.
+- [ ] GTM access to GTM-MBGVZFCG for you. Vortala already has the container, so this is an **internal** ask: get whoever manages it at Vortala to add you (or paidsearch@) with **Publish** permission. The client doesn't need to do anything.
 - [ ] Optional: if GTM has a GA4 tag (G-…), ask for GA4 Editor access so you can mark the booking as a key event.
 - [ ] The client has confirmed SKED's redirect URL is blank.
 - [ ] Decide the conversion **value**: none, or a fixed value (e.g. 199 for the new-patient special). Tell me which.

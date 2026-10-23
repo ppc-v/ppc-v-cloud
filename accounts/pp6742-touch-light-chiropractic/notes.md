@@ -3,7 +3,7 @@
 - **Google Ads ID:** 288-398-9795 (US Eastern, USD)
 - **Meta ad account ID:** none in the inventory
 - **WhatConverts profile:** 171730 (phone names "Google Ads Extension" = call asset (704) 312-2331, "Google Ads" = website pool)
-- **GTM container / GA4 property:** GTM-MBGVZFCG (SS has access as of 2026-10-23); GA4 not visible to paidsearch@
+- **GTM container / GA4 property:** GTM-MBGVZFCG (Vortala has access; SS not yet personally, being added internally as of 2026-10-23); GA4 not visible to paidsearch@
 - **Website:** https://www.touchlightchiro.com (ads land on /huntersville-chiropractor/)
 - **Office:** 16405 Northcross Dr, Huntersville NC. Positioning: brain-based / nervous-system chiropractic, NetworkSpinal, Webster certified, $199 new patient special, Dr. Ginni Gross
 - **Access:** normal

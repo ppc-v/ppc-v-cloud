@@ -19,4 +19,5 @@
 
 ## History and decisions
 - 2026-04-28: **account hijacked.** About 36 "PBN - …" spam campaigns (gambling/phishing URLs such as jaiclub*, line.me, a fake Argenta bank app) spent NZD 2,913 in one day. They're now removed, and spend stopped after that day. A refund for unauthorised spend may be due (check Billing → Transactions in the UI).
-- 2026-10-23 JW: client updated their payment details and ads are going live again. Claude reviewed the account before the relaunch; no live changes yet.
+- 2026-10-23 JW: client updated their payment details and ads are going live again. The team is handling the hijack/breach separately; no need to raise it again.
+- 2026-10-23 JW: relaunch tidy-up applied (log `2026-10-23_1738Z_JW_pp5825-relaunch-tidy-up.md`). Schedule now matches clinic hours, callouts and typo fixed, location set to Presence, 5 dead call actions set to secondary. Bidding is **Maximize Clicks with a NZD 15 max CPC** to gather data. Plan: around 6 Nov 2026, switch back to Maximize Conversions if there are enough data points.

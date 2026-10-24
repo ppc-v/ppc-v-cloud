@@ -18,6 +18,12 @@
 
 Pending (scheduled check-in after the 24 Oct 06:00 GMT+8 refresh, trigger `trig_01BAoUKX3dV8J1CroscQAHhL`): confirm the tab layout, then set PP5825 (464-210-2599) Remind on 2026-11-06, Reminder "Review Max Clicks data (CPC, conversions); switch to Max Conversions if there are enough data points".
 
+**Check-in 2026-10-24 00:30 UTC:**
+- The 24 Oct refresh completed (07:12 GMT+8). Owners & Notes now has the 11-column layout (Remind on ✎ in H, Reminder ✎ in I, auto columns in J:K).
+- All 5 manually edited rows were intact (Perfect Patients Marketing, PP0248, PP2122, PP2411, PP1654 Meta).
+- Wrote PP5825 row 36, H:I = `2026-11-06` / "Review Max Clicks data (CPC, conversions); switch to Max Conversions if there are enough data points" ✅. Read back OK.
+- John's `_slack` message for 24 Oct composed normally, with no ⏰ section (correct: nothing is due yet).
+
 ## Failed or skipped
 - None. Manifest (`appsscript`) unchanged. Read-back confirmed the live code matches the edited file.
 
